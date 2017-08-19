@@ -1,0 +1,65 @@
+.primary-nav {
+	margin-top: 140px;
+	
+	text-align: center;
+	font-weight: 300;
+	border: 1px solid red;
+	
+		
+		
+	ul {
+				
+        margin: 0;
+        padding: 0;
+		
+        @mixin clearFix;
+		
+        
+    }
+    
+    li {
+        list-style: none;
+        display: inline-block;
+        padding-right: 7px;
+        letter-spacing: .122em;
+			
+				
+        @mixin atMedium {
+            padding-right: 70px;
+            float: left;
+            display: block;
+					overflow: hidden;
+        }
+    }
+    
+    li:last-child {
+        padding-right: 0;
+        @mixin atLarge {
+            padding-right: 0px;
+        }
+    }
+    
+    a {
+       color: #A8A19B;
+			
+				font-size: 1.125rem;
+        text-decoration: none;
+        font-weight: 300;
+        display: block;
+        padding: 5px 8px;
+        font-size: .8rem;
+        background-color: rgba($mainBlue, .5);
+        
+        @mixin atMedium {
+            background-color: transparent;
+            font-size: 1rem;
+            padding: 12px 0;
+            
+            &.is-current-link {
+                color: #fabb69;
+            }
+        }
+        
+    }
+	
+}
