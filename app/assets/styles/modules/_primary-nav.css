@@ -1,60 +1,126 @@
 .primary-nav {
-	margin-top: 140px;
 	
-	text-align: center;
+	position: relative;
 	font-weight: 300;
-	border: 1px solid red;
-	
+
+	height: auto;
+	margin-left: auto;
+		margin-right: auto;
 		
+	
+	z-index: 22;
+	
+	@mixin atSmall {
+		
+		width: 100%;
+	}
+	
+	@mixin atMedium {
+		width: 700px;
+	}
+	
+	&--top {
+		padding-top: 100px;
+		
+		
+		@mixin atSmall {
+			padding-top: 90px;
+		}
+		
+		@mixin atMedium {
+			padding-top: 150px;
+		}
+	}
 		
 	ul {
+				margin: 0;
+				padding: 0;
+				@mixin clearFix;
+     
 				
-        margin: 0;
-        padding: 0;
+		@mixin atSmall {
+			padding-left: 70px;
+		}
 		
-        @mixin clearFix;
+		@mixin atMedium {
+				margin: 0;
+				padding: 0;
+				@mixin clearFix;
+		}
 		
         
     }
     
     li {
         list-style: none;
-        display: inline-block;
-        padding-right: 7px;
+       
+      	width: 100%;
         letter-spacing: .122em;
-			
+				float: left;
+				display: block;
 				
+				
+				
+			
+			@mixin atSmall {
+				margin-top: 10px;
+				
+				 padding-right: 11px;
+				display: inline-block;
+				background-color: transparent;
+				width: auto;
+			}
         @mixin atMedium {
-            padding-right: 70px;
+					background-color: transparent;
+            padding-right: 60px;
             float: left;
             display: block;
-					overflow: hidden;
+					width: auto;
+					
         }
+			
     }
     
     li:last-child {
-        padding-right: 0;
-        @mixin atLarge {
-            padding-right: 0px;
-        }
+			
+        padding-right: 0px;
+			
+			@mixin atMedium {
+				padding-right: 0px;
+			}
+			
+       
     }
     
     a {
        color: #A8A19B;
 			
-				font-size: 1.125rem;
+				text-align: center;
         text-decoration: none;
         font-weight: 300;
         display: block;
-        padding: 5px 8px;
-        font-size: .8rem;
-        background-color: rgba($mainBlue, .5);
+			float:left;
+				
+        padding: 15px;
+			margin: 0 auto;
+        font-size: .75rem;
+				color: #000;
+        background-color: rgba($blushPink, .76);
+			width:100%;
+				
+			z-index: 21;
+			
+			@mixin atSmall {
+				font-size: 1rem;
+				border-radius: 5px;
+				 padding: 15px 20px;
+			}
         
         @mixin atMedium {
             background-color: transparent;
-            font-size: 1rem;
+            font-size: 1.125rem;
             padding: 12px 0;
-            
+            color: #A8A19B;
             &.is-current-link {
                 color: #fabb69;
             }
