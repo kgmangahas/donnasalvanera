@@ -2,17 +2,14 @@
 	
 	position: relative;
 	font-weight: 300;
+	
+	
 
-	height: auto;
-	margin-left: auto;
-		margin-right: auto;
-		
 	
 	z-index: 22;
 	
 	@mixin atSmall {
-		
-		width: 100%;
+			width: 100%;
 	}
 	
 	@mixin atMedium {
@@ -23,29 +20,38 @@
 		padding-top: 100px;
 		
 		
+		
 		@mixin atSmall {
 			padding-top: 90px;
 		}
 		
 		@mixin atMedium {
 			padding-top: 150px;
+			
 		}
 	}
+	
+	
 		
 	ul {
 				margin: 0;
 				padding: 0;
 				@mixin clearFix;
-     
+     position: absolute;
+		top: 70px;
+		
 				
 		@mixin atSmall {
-			padding-left: 70px;
+			
+			padding-left: 20px;
+			
 		}
 		
 		@mixin atMedium {
 				margin: 0;
 				padding: 0;
 				@mixin clearFix;
+				top:auto;
 		}
 		
         
@@ -102,6 +108,7 @@
 			float:left;
 				
         padding: 15px;
+				padding-right: 20px;
 			margin: 0 auto;
         font-size: .75rem;
 				color: #000;

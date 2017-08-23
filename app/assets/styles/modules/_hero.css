@@ -1,25 +1,65 @@
 .hero {
-	height: auto;
-	margin: 0 auto;
+	
+	
 	position: relative;
 	z-index: 1;
-	&__wrapper {
-		padding-top: 20px;
-		width: 1160px;
-		margin: 0 auto;
+	
+	
+	
+	&__top-padding {
+	
+			position: absolute;
+			top: 110px;
+		
+		@mixin atMedium {
+			position: relative;
+			top:0;
+			margin-top: 20px;
+		}
+		
+	
+	
+	
+		
+	
+		
 	}
+	
+	&__wrapper {
+		
+		width: 100%;
+		height: auto;
+		margin: 0 auto;
+		
+		@mixin atMedium {			
+			padding-top: 20px;
+		}
+		
+	
+		
+		
+		
+	}
+
+
 
 	
 	
 	&__text-content {
+		padding: 0 30px;
 		width: 100%;
 		padding-top: 0;
 		position: absolute;
+		left: 50%;
 		top: 50%;
-		transform: translateY(-50%);
-		left: 0;
+		transform: translate(-50%, -50%);
+		
 		width: 100%;
-		text-align: center;    
+		text-align: center;  
+		margin: 0;
+		@mixin atSmall {
+			margin: 0 0px;
+		}
 	}
 	
 	&__img {
@@ -30,14 +70,30 @@
 	&__title {
 		font-style: italic;
 		color: $darkRose;
-		font-size: 2.1875rem;
+		font-size: 1.4375rem;
 		font-weight: 400;
+		
+		@mixin atSmall {
+			font-size: 1.9375rem;
+		}
+		@mixin atMedium {
+			font-size: 2.1875rem;
+		}
+		
+		
 	}
 	
 	&__subtitle {
-		font-size: 3.25rem;
+		font-size: 1.3125rem;
 		font-weight: 400;
 		margin-top: -.6em;
+		
+		@mixin atSmall {
+			font-size: 2.4375rem;
+		}
+		@mixin atMedium {
+			font-size: 3.25rem;
+		}
 		
 	}
 }
