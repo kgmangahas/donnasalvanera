@@ -1,6 +1,21 @@
 .row {
+	@mixin clearFix;
 	
-	&__img {
-		width: 50%;
+	&--gutters {
+        margin-right: -61px;
+    }
+	&--gutters > div {
+        padding-right: 61px;
+       
+    }
+	&__medium-5 {
+		width: 41.667%;
+		float: left;
 	}
+	
+	&__medium-7 {
+		width: 58.333%;
+		float: left;
+	}
+
 }
