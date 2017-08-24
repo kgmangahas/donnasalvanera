@@ -8,6 +8,15 @@
         padding-right: 61px;
        
     }
+
+    &--gutters-small {
+        margin-right: -45px;
+    }
+    
+    &--gutters-small > div {
+		padding-right: 45px;
+    }
+
 	&__medium-5 {
 		width: 41.667%;
 		float: left;
@@ -15,6 +24,11 @@
 	
 	&__medium-7 {
 		width: 58.333%;
+		float: left;
+	}
+
+	&__medium-50 {
+		width: 50%;
 		float: left;
 	}
 

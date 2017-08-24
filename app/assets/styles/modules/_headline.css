@@ -1,6 +1,7 @@
 .headline {
 	font-size: 1.9rem;
-	font-weight: 400;    
+	font-weight: 400; 
+	position: 	relative;   
 	
 	&--italic {
 		font-style: italic;
@@ -9,5 +10,45 @@
 	&--darkrose {
 		color: $darkRose;
 	}
+
+	&--no-t-margin {
+		margin-top: 0;
+	}
+
+	&__bg {
+		font-size: 6.25rem;
+		font-weight: 700;
+		color: $lightgray;
+		z-index: 1;
+		letter-spacing: .324em;
+
+	}
+
+	&--center {
+		text-align: center;
+	}
+
+	&--big {
+		font-size: 3.6875rem;
+		font-weight: 700;
+	}
     
+
+    &__absolute {
+    	position: absolute;
+    	top: 0;
+    	left:50%;
+    	transform: translateX(-50%);
+
+    }
+
+    &__top {
+    	z-index: 12;
+    }
+
+    &__sub {
+    	font-size: 1.375rem;
+    	margin-top: -20px;
+    	letter-spacing: .262em;
+    }
 }
