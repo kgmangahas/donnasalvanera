@@ -26,6 +26,37 @@ h2 {
 h3 {
 font-size: 1.375rem;
 }
+.border-show {
+    border: 1px solid black;
+}
+input[type="submit"],
+button[type="submit"] {
+    display: inline-block;
+    padding: 15px 40px;
+    margin-bottom: 0;
+    font-size: 1.625rem;
+    font-weight: 400;
+    
+    text-align: center;
+    white-space: nowrap;
+    vertical-align: middle;
+      cursor: pointer;
+    background-color: #fff;
+    -webkit-user-select: none;
+       -moz-user-select: none;
+        -ms-user-select: none;
+            user-select: none;
+    background-image: none;
+    border: none;
+    border-radius: 4px;
+    color: #f4c3c3;
+    font-family: 'Lato', sans-serif;
+}
+input[type="text"] {
+    padding: 15px 15px;
+    border: none;   
+    font-size: 1rem;
+}
 .site-header {
 	
 	
@@ -448,16 +479,31 @@ font-size: 1.375rem;
 		width: 58.333%;
 		float: left;
 	}
-.row__medium-50 {
+.row__medium-6 {
 		width: 50%;
 		float: left;
 	}
+.row__offset-3 {
+		margin-left: 25%;
+		
+	}
+.row__bottom-padding {
+		padding-bottom: 25px;
+	}
+.row__top-padding {
+		padding-top: 50px;
+	}
 .page-section {
-	
 	position: relative;
-	padding-top: 102px;
+	padding: 1.2rem 0;
 		
 }
+@media (min-width:800px) {
+.page-section {
+	        padding: 6.375rem 0 4rem 0
+		
+}
+    }
 .generic-content-container p {
         font-weight: 300;
         line-height: 1.2;       
@@ -522,6 +568,179 @@ font-size: 1.375rem;
 		float: right;
 	}
 .services {
-	border: solid 1px red;
+	
+	background-color: rgba(255,234,224,.75);
+	position: relative;
+	padding: 15px;
+	font-size: 1.5rem;
+	font-weight: 300;
+	font-style: italic;
+}
+.services--center{
+			}
+.services__icon {
+		
+		margin-bottom: 0;
+	}
+.services__icon--center {
+			text-align: center;
+			
+		}
+.services__icon > img {
+		width: 60px;
+		height: auto;
+		
+	}
+.services__border {
+		border: 1px solid #fff;
+		padding: 25px;
+
+	}
+.services__border > p {
+		margin: 10px 20px 30px 20px;
+		
+
+		
+	}
+.services__link {
+		font-size: 1.125rem;
+		text-align: center;
+		display: block;
+
+		
+
+		
+
+	}
+.go-to-next {
+	position: relative;
+font-weight: 700;
+	margin-left: auto;
+	margin-right: auto;
+	
+	width: 50%;
+
+
+
+
+}
+.go-to-next--center {
+		text-align: center;
+	}
+.go-to-next--t-b-border {
+		border-top:  solid 1px #95989A;
+		border-bottom:  solid 1px #95989A;
+	}
+.go-to-next__content {
+	
+		
+		position: relative;
+	}
+.go-to-next__content ul {
+			
+			margin: 0;
+			padding: 0;    		
+    		display: inline-block;
+			margin-left: auto;
+			margin-right: auto;
+			
+		}
+.go-to-next__content ul::after {
+        content: "";
+        clear: both;
+        display: table;
+        
+    }
+.go-to-next__content li {
+			
+			list-style: none;
+			float: left;
+			display: block;
+			padding-right: 75px;
+			
+		}
+.go-to-next__content li:last-child {
+			padding-right: 0;
+		}
+.go-to-next__content a {
+			text-align: center;
+			display: block;
+			font-size: 2.125rem;
+			font-style: italic;
+			font-weight: 400;
+		}
+.opt-ins {
+		background-color: rgba(244,195,195,.7);
+	color: #fff;
+	padding: 40px 20px;
+	position: relative;
+	margin-left: auto;
+	margin-right: auto;
+	text-align: center;;
+	z-index: 14;
+
+
+
+
+
 	
 }
+.opt-ins__content {
+		position: relative;
+		margin-left: auto;
+		margin-right: auto;
+		font-size: 1.625rem;
+		letter-spacing: .072em;
+		line-height: 1.23em;
+		padding: 0 100px;
+		
+	}
+/* titlewithstrike */
+.opt-ins__title {
+
+		
+		display: -webkit-box;
+
+		
+		display: -ms-flexbox;
+
+		
+		display: flex;
+		font-style: italic;
+		font-size: 2.0625rem;
+		font-weight: 400;
+		letter-spacing: 0;
+
+		
+	}
+.opt-ins__title:before, .opt-ins__title:after {
+		color: #fff;
+		content: '';
+		-webkit-box-flex: 1;
+		    -ms-flex: 1;
+		        flex: 1;
+		border-bottom: solid 1px #fff;
+		margin: auto 1em;
+
+	}
+.opt-ins__submit {
+		display: block;
+		margin-top: 30px;
+	}
+.opt-ins__email {
+		margin-top: 40px;
+		position: relative;
+		margin-left: auto;
+		margin-right: auto;
+		display: block;
+		text-align: center;
+		width:60%;
+
+
+	}
+.opt-ins__img {
+
+		background: url('../../assets/images/sign-up-bg.png') top center no-repeat;
+              background-size: cover;
+              
+	}

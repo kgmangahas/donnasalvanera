@@ -1,0 +1,75 @@
+.opt-ins {
+		background-color: rgba($rose,.7);
+	color: #fff;
+	padding: 40px 20px;
+	position: relative;
+	margin-left: auto;
+	margin-right: auto;
+	text-align: center;;
+	z-index: 14;
+
+	&__content {
+		position: relative;
+		margin-left: auto;
+		margin-right: auto;
+		font-size: 1.625rem;
+		letter-spacing: .072em;
+		line-height: 1.23em;
+		padding: 0 100px;
+		
+	}
+
+
+	/* titlewithstrike */
+	&__title {
+
+		
+		display: flex;
+		font-style: italic;
+		font-size: 2.0625rem;
+		font-weight: 400;
+		letter-spacing: 0;
+
+		
+	}
+
+	&__title:before, &__title:after {
+		color: #fff;
+		content: '';
+		flex: 1;
+		border-bottom: solid 1px #fff;
+		margin: auto 1em;
+
+	}
+
+	&__submit {
+		display: block;
+		margin-top: 30px;
+	}
+
+
+	&__email {
+		margin-top: 40px;
+		position: relative;
+		margin-left: auto;
+		margin-right: auto;
+		display: block;
+		text-align: center;
+		width:60%;
+
+
+	}
+
+	&__img {
+
+		background: url('../../assets/images/sign-up-bg.png') top center no-repeat;
+              background-size: cover;
+              
+	}
+
+
+
+
+
+	
+}

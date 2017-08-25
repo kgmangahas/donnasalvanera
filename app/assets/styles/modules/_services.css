@@ -1,4 +1,55 @@
 .services {
-	border: solid 1px red;
 	
+	background-color: rgba($peach,.75);
+	position: relative;
+	padding: 15px;
+	font-size: 1.5rem;
+	font-weight: 300;
+	font-style: italic;
+
+	&--center{
+			}
+
+
+	&__icon {
+		
+		margin-bottom: 0;
+
+		&--center {
+			text-align: center;
+			
+		}
+	}
+
+	&__icon > img {
+		width: 60px;
+		height: auto;
+		
+	}
+
+	&__border {
+		border: 1px solid #fff;
+		padding: 25px;
+
+	}
+
+	&__border > p {
+		margin: 10px 20px 30px 20px;
+		
+
+		
+	}
+
+	
+
+	&__link {
+		font-size: 1.125rem;
+		text-align: center;
+		display: block;
+
+		
+
+		
+
+	}
 }

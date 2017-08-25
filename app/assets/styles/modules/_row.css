@@ -27,9 +27,26 @@
 		float: left;
 	}
 
-	&__medium-50 {
+	&__medium-6 {
 		width: 50%;
 		float: left;
 	}
+
+
+	&__offset-3 {
+		margin-left: 25%;
+		
+	}
+
+	
+	&__bottom-padding {
+		padding-bottom: 25px;
+	}
+	
+
+	&__top-padding {
+		padding-top: 50px;
+	}
+
 
 }
