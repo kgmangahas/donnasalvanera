@@ -1,5 +1,8 @@
 .opt-ins {
-		background-color: rgba($rose,.7);
+	/* background: rgba($rose,.7) url('../../assets/images/sign-up-bg.png') top center no-repeat; */
+	background: linear-gradient(rgba($rose,.7),rgba($rose,.7)), url('../../assets/images/sign-up-bg.png');
+
+	
 	color: #fff;
 	padding: 40px 20px;
 	position: relative;
@@ -62,8 +65,7 @@
 
 	&__img {
 
-		background: url('../../assets/images/sign-up-bg.png') top center no-repeat;
-              background-size: cover;
+		
               
 	}
 

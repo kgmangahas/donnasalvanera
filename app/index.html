@@ -14,10 +14,10 @@
 			
 		
 			<!--Bootstrap core CSS-->
-		
-			<link href="assets/css/bootstrap.css" rel="stylesheet">
-		
-		
+			<!-- 	
+						<link href="assets/styles/bootstrap.css" rel="stylesheet">
+					
+					 -->
 			<link href="temp/styles/styles.css" rel="stylesheet">
 			
 			<!--GOOGLE FONTS-->
@@ -67,8 +67,8 @@
 				
 
 				<picture>
-					<source srcset="assets/images/hero--large.png 1164w, assets/images/hero--large-hi-dpi.png 2328w" media="(min-width: 800px)">
-					<source srcset="assets/images/hero--medium.png 769w, assets/images/hero--medium-hi-dpi.png 1538w" media="(min-width: 530px)">
+					<source sizes="1164px" srcset="assets/images/hero--large.png 1164w, assets/images/hero--large-hi-dpi.png 2328w" media="(min-width: 800px)">
+					<source sizes="769px" srcset="assets/images/hero--medium.png 769w, assets/images/hero--medium-hi-dpi.png 1538w" media="(min-width: 530px)">
 
 					<img srcset="assets/images/hero--small.png 188w, assets/images/hero--small-hi-dpi.png 376w" alt="peonies with laptop" class="hero__img">	
 				</picture>
@@ -88,15 +88,20 @@
 			<div class="wrapper">
 				<div class="row row--gutters">
 					<div class="row__medium-5">
-							<img src="assets/images/me.png" alt="woman sitting">
+						<picture>
+							<source sizes="456px" srcset="assets/images/me--large.png 456w, assets/images/me--large-hi-dpi.png 911w" media="(min-width: 1100px)">
+							<source sizes="229px" srcset="assets/images/me--medium.png 229w, assets/images/me--medium-hi-dpi.png 458w" media="(min-width: 800px)">
+							<img srcset="assets/images/me--small.png 333w, assets/images/me--small-hi-dpi.png 665w" alt="woman sitting">
+						</picture>
 					</div>
 					<div class="row__medium-7" >
 						<div class="generic-content-container">
-							<h2 class="headline headline--italic headline--darkrose headline--no-t-margin headline">Here at DS Digital Studio, we are passionate about your success</h2>
+							<h2 class="headline headline--italic headline--darkrose headline--no-t-margin">Here at DS Digital Studio, we are passionate about your success</h2>
 							<div class="about__text-content">	
-								<p>We strongly believe that you are the greatest asset of your own brand – so much more than just a logo or a colour palette.</p>
-								<p> We hear your story and creatively interprets it that your brand resonates nothing but you and your unique values.</p>
-								<span class="headline--darkrose about--right"><a href="#">LEARN MORE</a></span>
+								<p>We strongly believe that you are the greatest asset of your own brand – so much more than just a logo or a colour palette. <br>
+								 We hear your story and creatively interprets it that your brand resonates nothing but you and your unique values.</p>
+							
+								<div class="about--center"><a class="about--right about__link" href="#">LEARN MORE</a></div>
 							</div>
 						</div>
 							
@@ -110,10 +115,10 @@
 		
 		<div id="services" class="page-section">
 			<h1 class="headline headline__bg headline--center headline__absolute">SERVICES</h1>
-			<h2 class="headline headline--center headline--italic headline--big headline--no-t-margin headline__top">let' s work together </h2>
+			<h2 class="headline headline--center headline--italic headline--big headline--no-t-margin headline__top headline--t-margin">let' s work together </h2>
 			<h3 class="headline headline__sub headline--center headline--darkrose headline--no-t-margin">READY TO BUILT SOMETHING AWESOME?</h3>
 			
-			<div class="wrapper">	
+			<div class="wrapper wrapper--none">	
 				<div class="row row--gutters-small row__top-padding">	
 					<div class="row__medium-6">
 						<div class="services services--center">
@@ -129,7 +134,7 @@
 						
 					</div>
 
-					<div class="row__medium-6">
+					<div class="row__medium-6 row__top-padding--single">
 						<div class="services services--center">
 							<div class="services__border">
 								<div class="services__icon services__icon--center">
@@ -155,6 +160,7 @@
 		
 		<div class="wrapper">
 			<div class="page-section">
+
 				<div class="go-to-next">
 					<div class="go-to-next--center go-to-next--t-b-border row__bottom-padding">
 						<h2>WANT TO KNOW MORE</h2>
@@ -170,9 +176,9 @@
 			</div>
 		</div>
 		
-		<div class="wrapper">
-
-			<div class="page-section">
+		
+		<div class="page-section">
+			<div class="wrapper">
 
 				<div class="opt-ins opt-ins__img">
 				
@@ -199,20 +205,34 @@
 		</div>
 		
 
-		<div>
-			<div>
-				<a href="fb">fb</a>
-				<a href="fb">twitter</a>
-				<a href="fb">instagram</a>
-				<a href="fb"></a>
-				<p>&copy; 2017 DS Digital Studio</p>
+		<div class="wrapper">
+
+			<div class="footer">
+				<div class="footer__sign">
+					<img src="assets/images/ds.svg" alt="">
+				</div>
+
+				<p class="footer__copy">&copy; 2017 DS Digital Studio</p>
+
+				<div class="footer__social-media">
+					<ul>
+						<li><img src="assets/images/fb.svg" alt=""><a href=""></a></img></li>
+						<li><img src="assets/images/instagram.svg" alt=""><a href=""></a></img></li>
+						<li><img src="assets/images/twitter.svg" alt=""><a href=""></a></img></li>
+						<li><img src="assets/images/tumbler.svg" alt=""><a href=""></a></img></li>
+					</ul>
+					
+				</div>
+			
+				
 			</div>
 		</div>
 		
 		
 		<!--BOOTSRAP CORE JAVASCRIPT-->	
-		<script src="assets/js/jquery.min.js"></script>
-		<script src="assets/js/bootstrap.min.js"></script>
+		<script src="assets/scripts/jquery.min.js"></script>
+		<script src="assets/scripts/bootstrap.min.js"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js" integrity="sha384-b/U6ypiBEHpOf/4+1nzFpr53nxSS+GLCkfwBdFNTxtclqqenISfwAzpKaMNFNmj4" crossorigin="anonymous"></script>
 		
 	</body>
 </html>

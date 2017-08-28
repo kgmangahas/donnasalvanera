@@ -5,6 +5,20 @@
 	margin-right: auto;
 	width: 100%;
 	max-width: 1200px;
+
+
+	&--none {
+		
+
+		padding-left: 0;
+		padding-right: 0;
+		
+
+		@mixin atSmall {
+			padding-left: 15px;
+			padding-right: 15px;
+		}
+	}
 	
 	//border: solid black 1px;
 	

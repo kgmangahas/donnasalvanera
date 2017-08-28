@@ -1,6 +1,66 @@
 .about {
-	&--right {
-		float: right;
+	position: relative;
+
+	&__text-content {
+		position: relative;
+		
+
 	}
+	
+	
+
+
+		
+	
+
+	&--center {
+		
+
+		position: absolute;
+		left: 50%;
+		transform: translateX(-50%);
+		margin-top: 10px;
+			padding: 10px;
+			border-radius: 2px;
+			border: 2px solid $rose;
+			text-align: center;
+		
+		@mixin atMedium {
+			transform: none;
+			left: 0%;
+			position: inherit;
+			float: right;
+			margin-top: 0px;
+			border: none;
+		}
+
+	
+		
+
+	}
+
+	&__link {
+		
+		
+		
+		
+		
+		font-size:  1rem;
+		letter-spacing: .074em;
+
+		@mixin atMedium {
+			font-size: 1.1875rem;
+			letter-spacing: .074em;
+		}
+
+		@mixin atLarge{
+			font-size: 1.5625rem;
+			letter-spacing: .015em;
+
+		}
+	}
+
+
+
 	
 }

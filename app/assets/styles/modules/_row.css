@@ -17,6 +17,12 @@
 		padding-right: 45px;
     }
 
+
+
+	 
+
+    @mixin atMedium {
+
 	&__medium-5 {
 		width: 41.667%;
 		float: left;
@@ -38,6 +44,10 @@
 		
 	}
 
+    }
+
+	
+
 	
 	&__bottom-padding {
 		padding-bottom: 25px;
@@ -45,7 +55,23 @@
 	
 
 	&__top-padding {
-		padding-top: 50px;
+		margin-top: 50px;
+
+
+	}
+
+	&__top-padding--single {
+		margin-top: 0;
+		@mixin atSmall {
+			margin-top: 40px;
+		}
+
+		@mixin atMedium {
+			margin-top: 0;
+		}
+		
+
+
 	}
 
 

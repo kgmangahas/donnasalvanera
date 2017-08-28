@@ -8,8 +8,8 @@
 	
 	&__top-padding {
 	
-			position: absolute;
-			top: 110px;
+			position: relative;
+			
 		
 		@mixin atMedium {
 			position: relative;
