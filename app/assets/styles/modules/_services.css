@@ -3,13 +3,19 @@
 	background-color: rgba($peach,.75);
 	position: relative;
 	padding: 15px;
-	font-size: 1.5rem;
+	font-size: 1.375rem;
 	font-weight: 300;
 	font-style: italic;
 
-
-	padding-left: 20px;
+	margin-left: -10px;
+	margin-right: -10px;
 	
+	@mixin atSmall {
+		font-size: 1.5rem
+
+	}
+
+
 	&--center {
 	
 	}
@@ -46,6 +52,15 @@
 
 	&__border > p {
 		margin: 10px 20px 30px 20px;
+		text-align: center;
+		@mixin atSmall {
+			margin: 10px 50px 30px 50px;
+			text-align: left;
+		}
+		@mixin atMedium {
+			margin: 10px 20px 30px 20px;
+			text-align: left;
+		}
 		
 
 		
@@ -56,7 +71,22 @@
 	&__link {
 		font-size: 1.125rem;
 		text-align: center;
-		display: block;
+		display: inherit;
+		padding: 15px;
+		border-radius: 2px;
+		border: 2px solid $rose;
+		position: relative;
+		margin-left: auto;
+		margin-right: auto;
+		width: 115px;
+		
+
+		@mixin atSmall {
+
+			border: none;
+			width: auto;
+
+		}
 
 		
 

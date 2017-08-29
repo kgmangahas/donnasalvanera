@@ -1,24 +1,45 @@
 .opt-ins {
 	/* background: rgba($rose,.7) url('../../assets/images/sign-up-bg.png') top center no-repeat; */
-	background: linear-gradient(rgba($rose,.7),rgba($rose,.7)), url('../../assets/images/sign-up-bg.png');
+	background-color: rgba($rose,.7);
 
 	
 	color: #fff;
-	padding: 40px 20px;
+	
+	position: relative;
+	margin-left: -25px;
+	margin-right: -25px;
+	text-align: center;;
+	z-index: 14;
+	padding: 40px 10px;
+
+	@mixin atMedium {
+		padding: 40px 20px;
+		background: linear-gradient(rgba($rose,.7),rgba($rose,.7)), url('../../assets/images/sign-up-bg.png');
+		
 	position: relative;
 	margin-left: auto;
 	margin-right: auto;
-	text-align: center;;
-	z-index: 14;
+	}
+
+
 
 	&__content {
 		position: relative;
 		margin-left: auto;
 		margin-right: auto;
-		font-size: 1.625rem;
-		letter-spacing: .072em;
-		line-height: 1.23em;
-		padding: 0 100px;
+		
+		font-size: 1.3125rem;
+			letter-spacing: .037em;
+			line-height: 1.23em;
+		padding: 0 50px;
+
+		
+		@mixin atMedium {
+			font-size: 1.625rem;
+			letter-spacing: .072em;
+			line-height: 1.23em;
+			padding: inherit;
+		}
 		
 	}
 
@@ -27,11 +48,18 @@
 	&__title {
 
 		
-		display: flex;
+		display: block;
 		font-style: italic;
-		font-size: 2.0625rem;
+		font-size: 1.875rem;
 		font-weight: 400;
 		letter-spacing: 0;
+		
+
+
+		@mixin atMedium {
+			display: flex;
+			font-size: 2.0625rem;
+		}
 
 		
 	}
@@ -40,8 +68,14 @@
 		color: #fff;
 		content: '';
 		flex: 1;
-		border-bottom: solid 1px #fff;
+		border-bottom: solid 0 #fff;
 		margin: auto 1em;
+
+		@mixin atSmall {
+			border-bottom: solid 1px #fff;
+
+		}
+				
 
 	}
 
@@ -54,11 +88,16 @@
 	&__email {
 		margin-top: 40px;
 		position: relative;
+		display: block;
 		margin-left: auto;
 		margin-right: auto;
-		display: block;
+		
 		text-align: center;
-		width:60%;
+		width:100%;
+		height: 50px;
+
+
+
 
 
 	}

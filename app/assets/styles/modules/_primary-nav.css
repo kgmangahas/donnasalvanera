@@ -6,9 +6,11 @@
 
 	margin-left: auto;
 	margin-right: auto;
-		
+	width: auto;
 	
 	z-index: 22;
+	
+	
 	
 	@mixin atSmall {
 	
@@ -40,8 +42,11 @@
 				margin: 0;
 				padding: 0;
 				@mixin clearFix;
+				
      position: absolute;
+     left:0;
 		top: 70px;
+
 		
 				
 		@mixin atSmall {
@@ -61,12 +66,19 @@
     }
     
     li {
+
+    	margin: 0;
+    	padding: 0;
         list-style: none;
+        @mixin clearFix;
+
        
       	width: 100%;
         letter-spacing: .122em;
-				float: left;
-				display: block;
+				
+				display: inline-block;
+				
+				
 				
 				
 				
@@ -92,8 +104,8 @@
     
     li:last-child {
 			
-        padding-right: 0px;
-			
+       
+			padding-right: 0;
 			@mixin atMedium {
 				padding-right: 0px;
 			}
@@ -102,29 +114,33 @@
     }
     
     a {
-       color: #A8A19B;
-			
-				text-align: center;
-        text-decoration: none;
-        font-weight: 300;
-        display: block;
-			float:left;
-				
-        padding: 15px;
-				padding-right: 20px;
-			margin: 0 auto;
-        font-size: .75rem;
-				color: #000;
-        background-color: rgba($blushPink, .76);
-			width:100%;
-				
-			z-index: 21;
-			
-			@mixin atSmall {
-				font-size: 1rem;
-				border-radius: 5px;
-				 padding: 15px 20px;
-			}
+    	color: #A8A19B;
+
+    	text-align: center;
+    	text-decoration: none;
+    	font-weight: 300;
+    	display: inline-block;
+
+
+    	padding: 15px;
+		
+		
+    	
+
+    	font-size: .75rem;
+    	color: #000;
+    	background-color: rgba($blushPink, .76);
+    	width:100%;
+
+    	z-index: 21;
+
+    	@mixin atSmall {
+    		font-size: 1rem;
+    		border-radius: 5px;
+    		padding: 15px 20px;
+    		margin-left: inherit;
+    		margin-right: inherit;
+    	}
         
         @mixin atMedium {
             background-color: transparent;

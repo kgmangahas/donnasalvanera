@@ -23,15 +23,15 @@
 	}
 
 	&--no-t-margin {
-		margin-top: 20px;
+		margin-top: 5px;
 
-		@mixin atMedium {
+		@mixin atSmall {
 			margin-top: 5px;
 		}
 	}
 
 	&__bg {
-
+		position: relative;
 		font-size: 4rem;
 		font-weight: 400;
 		color: rgba($lightgray,.8);
@@ -39,14 +39,15 @@
 		letter-spacing: .212em;
 		opacity: 0;
 
-		@mixin atMedium {
+		@mixin atSmall {
 			font-size: 5.5rem;
 			letter-spacing: .181em;
 			opacity: 1;
 		}
 
-		@mixin atLarge {
+		@mixin atMedium {
 			font-size: 6.25rem;
+			letter-spacing: .181em;
 			opacity: 1;
 		}
 
@@ -60,7 +61,7 @@
 		font-size: 2.25rem;
 		font-weight: 700;
 
-		@mixin atMedium {
+		@mixin atSmall {
 			font-size: 3.6875rem;
 			font-weight: 700;
 		}

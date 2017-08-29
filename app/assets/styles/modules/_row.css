@@ -18,7 +18,46 @@
     }
 
 
+  
 
+
+
+	@mixin atSmall {
+		&__sm-4 {
+		width: 33.333%;
+		float: left;
+		}
+
+
+		&__sm-5 {
+		width: 41.667%;
+		float: left;
+		}
+		
+		&__sm-7 {
+			width: 58.333%;
+			float: left;
+		}
+
+		&__sm-6 {
+			width: 50%;
+			float: left;
+		}
+
+
+		&__sm-offset-3 {
+			margin-left: 25%;
+			
+		}
+
+		&__sm-offset-1 {
+			margin-left: 8.33%;
+			
+		}
+		
+
+
+	}
 	 
 
     @mixin atMedium {
