@@ -2,57 +2,72 @@
 	background-color: rgba($blushPink,.49);
 	position: relative;
 	padding-top: 0px;
-
+	padding-bottom: 130px;
 	height: 170px;
-
-	margin-left: -20px;
-	margin-right: -20px;
-
+	margin-left: -25px;
+	margin-right: -25px;
 	
 	@mixin atSmall {
+
 		padding-top: 62px;
-		height: 170px;
+		
 		margin:inherit;
+		height: inherit;
+		padding-bottom: 80px;
+		
 	}
 
 
 	@mixin atMedium {
 		padding-top: 25px;
-		height: 100px;
 		margin:inherit;
+		height: inherit;
+		padding-bottom: 120px;
+		
+		
 	}
 	
 
 
 	
 	&__sign {
+
 		position: absolute;
 		top: -90px;
 		left: 50%;
 		transform: translateX(-50%);
-
+		
 	
 		width: 103px;
-		height: auto;
+		height: 100px;
 		z-index: 15;
 		display: none;
 		@mixin atSmall {
-			display: inherit;
+			display: block;
 		}
 
 	}
 
 	&__copy {
-		
-		position: relative;
-		
+	
+		position: absolute;
 		font-weight: 1.25rem;
 		font-style: italic;
 		color: $rose;
 		margin-left: 20px;
-	
-		@mixin atMedium {
+		top: 70%;
+		left: 50%;
+		transform: translateX(-50%);
+		text-align: center;
+		margin-left: 0;
+		@mixin atSmall {
+
+			
+			left: 0;
 			margin-left: 50px;
+			top: 40%;
+			transform: translateY(-50%);
+			
 		}
 		
 
@@ -61,21 +76,22 @@
 	&__social-media {
 
 		
-		border: red 1px solid;
+		
 		width: 100%;
 		position: absolute;
-			left:0;
+		
+		left: 50%;
+		top:50%;
+		transform: translate(-50%,-50%);
+
+
 			
-			top: 50%;
-			transform: translateY(-50%);
 
 		@mixin atSmall {
 			position: absolute;
-			top: 0;
-			right: 0;
-
+			top: 0;			
 			top: 50%;
-			transform: translateY(-40%);
+			
 		}
 
 
@@ -84,7 +100,13 @@
 			padding: 0;
 			@mixin clearFix;
 		    position: relative;
-		    float: right;
+		    text-align: center;
+		    margin-right: 0;
+
+		    @mixin atSmall {
+		    	float: right;
+		    	margin-right: 20px;
+		    }
 		
 		
 		}
@@ -93,6 +115,10 @@
 			list-style: none;
 			display: inline-block;
 			padding-right: 20px
+		}
+
+		li:last-child {
+			padding:0;
 		}
 		img {
 			width: 47px;

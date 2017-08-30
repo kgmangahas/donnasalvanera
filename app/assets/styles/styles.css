@@ -1,6 +1,7 @@
+@import "normalize.css";
 @import "base/_variable";
-@import "base/_global";
 @import "base/_mixins";
+@import "base/_global";
 @import "modules/_site-header";
 @import "modules/_primary-nav";
 @import "modules/_hero";
@@ -14,3 +15,4 @@
 @import "modules/_go-to-next";
 @import "modules/_opt-ins";
 @import "modules/_footer";
+@import "modules/_social-icons";

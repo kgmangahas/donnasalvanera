@@ -23,9 +23,13 @@
 	}
 
 	&--no-t-margin {
-		margin-top: 5px;
+		margin-top: 20px;
 
 		@mixin atSmall {
+			margin-top: 20px;
+		}
+
+		@mixin atMedium {
 			margin-top: 5px;
 		}
 	}

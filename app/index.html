@@ -21,7 +21,7 @@
 			<link href="temp/styles/styles.css" rel="stylesheet">
 			
 			<!--GOOGLE FONTS-->
-			<link href="https://fonts.googleapis.com/css?family=Lato:300i,400,400i,700" rel="stylesheet">
+			<link href="https://fonts.googleapis.com/css?family=Lato:300i,300,400,400i,700" rel="stylesheet">
 			
 		
 			<!-- HTML5 shiv and Respond.js IE8 support of HTML5 elements and media queries -->
@@ -38,11 +38,14 @@
 				<div class="site-header__logo">
 					<a class="site-header__brand" href="/"><img src="assets/images/logo.png"></a>					
 				</div>
+				<div class="site-header__name">
+					donna&nbsp;salvanera
+				</div>
 				
 				<!--navbar-->
 				<div class="site-header__menu-icon">           
-            <div class="site-header__menu-icon__middle"></div>      
-        </div>
+					<div class="site-header__menu-icon__middle"></div>      
+				</div>
 				
 				<div class="site-header__menu-content">
 					<nav class="primary-nav primary-nav--top">
@@ -55,14 +58,24 @@
 						</ul>
 					</nav>
 				</div>
-				
+				<div class="site-header__b-accent ">
+					<div class="site-header__b-accent footer__social-media social-icons">
+					<ul>
+						<li><img src="assets/images/fb.svg" alt=""><a href=""></a></img></li>
+						<li><img src="assets/images/instagram.svg" alt=""><a href=""></a></img></li>
+						<li><img src="assets/images/twitter.svg" alt=""><a href=""></a></img></li>
+						<li><img src="assets/images/tumbler.svg" alt=""><a href=""></a></img></li>
+					</ul>
+					
+					</div>
+				</div>
 			</div>
-		
+
 			
 			
 		</header>
 		
-		<div class="hero__top-padding">
+		<div class="hero hero__top-padding">
 			<div class="wrapper">
 				
 
@@ -114,17 +127,18 @@
 		</div>
 		
 		<div id="services" class="page-section">
-			<h1 class="headline headline__bg headline--center headline__absolute">SERVICES</h1>
-			<h2 class="headline headline--center headline--italic headline--big headline--no-t-margin headline__top headline--t-margin">let' s work together </h2>
-			<h3 class="headline headline__sub headline--center headline--darkrose headline--no-t-margin">READY TO BUILT SOMETHING AWESOME?</h3>
-			
 			<div class="wrapper wrapper--none">	
-				<div class="row row--gutters-small row__top-padding">	
+				<h1 class="headline headline__bg headline--center headline__absolute">SERVICES</h1>
+				<h2 class="headline headline--center headline--italic headline--big headline--no-t-margin headline__top headline--t-margin">let' s work together </h2>
+				<h3 class="headline headline__sub headline--center headline--darkrose headline--no-t-margin">READY TO BUILT SOMETHING AWESOME?</h3>
+			
+			
+				<div class="row row--gutters-small row__top-padding ">	
 					<div class="row__medium-6">
 						<div class="services services--center">
 							<div class="services__border">
 								<div class="services__icon services__icon--center">
-									<img src="assets/images/branding-icon.png">
+									<img src="assets/images/branding-icon.svg">
 								</div>
 								
 								<p>Create your most purposeful brand through authentic strategy &amp; intentional design.</p>
@@ -158,18 +172,18 @@
 		
 		
 		
-		<div class="wrapper">
-			<div class="page-section">
-
+		
+		<div id="go-to-next" class="page-section">
+			<div class="wrapper">
 				<div class="go-to-next">
 					<div class="go-to-next--center go-to-next--t-b-border row__bottom-padding">
-						<h2 class="go-to-next__title">WANT TO KNOW MORE</h2>
+						<h2 class="go-to-next__title">WANT TO KNOW MORE?</h2>
 						<div class="go-to-next__content">
-						<ul>
-							<li><a href="">Testimonials</a></li>
-							<li><a href="">Portfolio</a></li>
-						</ul>
-						
+							<ul>
+								<li><a href="">Testimonials</a></li>
+								<li><a href="">Portfolio</a></li>
+							</ul>
+						</div>
 						
 					</div>
 				</div>
@@ -177,27 +191,18 @@
 		</div>
 		
 		
-		<div class="page-section">
+		<div id="opt-ins" class="page-section page-section__last">
 			<div class="wrapper">
-
-				<div class="opt-ins opt-ins__img">
-				
-					
-						<!-- <img class="opt-ins__img" src="assets/images/sign-up-bg.png" alt="mug with coffee"> -->
-						<h3 class="opt-ins__title">get free images sent to you monthly </h3>
-						<div class="opt-ins__content">
-					<p>Enter your email below to get FREE photos and resources for your business delivered to your inbox every month. </p>
-
-					<form  role="form">
-													
-								<input type="text"  id="subscribe-email" placeholder="" class="opt-ins__email">
-							
+				<div class="opt-ins opt-ins__img">					
+					<!-- <img class="opt-ins__img" src="assets/images/sign-up-bg.png" alt="mug with coffee"> -->
+					<h3 class="opt-ins__title">get free images sent to you monthly </h3>
+					<div class="opt-ins__content">
+						<p>Enter your email below to get FREE photos and resources for your business delivered to your inbox every month. </p>
+						<form  role="form">
+							<input type="text"  id="subscribe-email" placeholder="" class="opt-ins__email">						
 							
 							<input type="submit" class="opt-ins__submit" value="sign up">
-						</form>
-						
-							
-					
+						</form>		
 					</div>
 					
 				</div>
@@ -205,11 +210,11 @@
 		</div>
 		
 
-		<div class="wrapper">
+		<div class="wrapper ">
 
 			<div class="footer">
-				<div class="footer__sign">
-					<img src="assets/images/ds.svg" alt="">
+				<div class="footer__sign ">
+					<img src="assets/images/ds.png" alt="">
 				</div>
 
 				<p class="footer__copy">&copy; 2017 DS Digital Studio</p>
@@ -230,9 +235,9 @@
 		
 		
 		<!--BOOTSRAP CORE JAVASCRIPT-->	
-		<script src="assets/scripts/jquery.min.js"></script>
+		<!-- <script src="assets/scripts/jquery.min.js"></script>
 		<script src="assets/scripts/bootstrap.min.js"></script>
-		<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js" integrity="sha384-b/U6ypiBEHpOf/4+1nzFpr53nxSS+GLCkfwBdFNTxtclqqenISfwAzpKaMNFNmj4" crossorigin="anonymous"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js" integrity="sha384-b/U6ypiBEHpOf/4+1nzFpr53nxSS+GLCkfwBdFNTxtclqqenISfwAzpKaMNFNmj4" crossorigin="anonymous"></script> -->
 		
 	</body>
 </html>

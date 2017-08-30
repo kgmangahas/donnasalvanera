@@ -8,18 +8,14 @@
 	
 	&__top-padding {
 	
-			position: relative;
-			
-		
+		position: relative;
+		padding-top: 0;
+		 margin-top: -130px; 
 		@mixin atMedium {
 			position: relative;
 			top:0;
-			margin-top: 20px;
+			margin-top: 10px;
 		}
-		
-	
-	
-	
 		
 	
 		
@@ -37,13 +33,10 @@
 		
 	
 		
-		
-		
 	}
 
 
 
-	
 	
 	&__text-content {
 		padding: 0 30px;

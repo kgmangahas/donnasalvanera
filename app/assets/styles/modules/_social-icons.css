@@ -1,0 +1,12 @@
+.social-icons {
+	z-index: 32;
+	position: relative;
+	left: 20%;
+	
+	padding-top: 800px;
+
+	display: block;
+	@mixin atMedium {
+		display: none
+	}
+}

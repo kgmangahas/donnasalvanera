@@ -1,18 +1,58 @@
 .site-header {
 	
 	
-	
-	width: 100%;
-	height: 200px;
+	width: 100%;	
 	position: relative;	
+	z-index: 30;
+	/* background-color: $blushPink;
+	height: 100vh;
+	 */
+	@mixin atMedium {
 
-	
+		height: 200px;
+		background-color: transparent;
+		display: block;
+	}
+
+	&__b-accent {
+		position: relative;
+		
+		width: inherit;
+		margin-left: auto;
+		margin-right: auto;
+		margin-top: 120px;
+		width: 100%;
+		display: block;
+		
+		display: none;
+		
+		
+		
+	}
+
+	 &__b-accent:after {
+
+		content: '';
+		border-bottom: solid 1px $white;
+		margin-top: 180px;
+		
+		margin-right: 550px;
+		width: 100%;
+		display: block;
+
+		@mixin atMedium {
+			display: none;
+		}
+
+		
+		
+	}
 
 	&__logo {		
 	
 		
-		display: block;
-		height: auto;
+		
+		
 		position: absolute;
 		width: 280px;
 		
@@ -20,24 +60,69 @@
 		left: 50%;
 		transform: translate(-50%,-50%);
 		
+		display: block;
 		
 		@mixin atSmall {
-			width: 450px;
-		
+			display: block;
+			width: 450px;		
 		top: 20%;
 		}
 		
 		@mixin atMedium {
+			display: block;
 			width: 800px;
 			top: 40%;
 			
 		}
 		
 	}
+
+	&__name {
+		color: $white;
+		font-size: 2rem;
+		font-style: italic;
+		font-weight: 300;
+		
+		display: flex;
+		
+		text-align: center;
+		padding: 12% 40px;
+		@mixin atMedium{
+			display: none;
+		}
+
+	}
+
+	&__name:before, &__name:after {
+		color: $white;
+		content: '';
+		flex: 1;
+		border-bottom: solid 0 #fff;
+		margin: 0;
+
+		@mixin atSmall {
+			border-bottom: solid .5px $white;
+			margin: auto 1em
+		}
+				
+
+	}
+
+	
+
+
+
+	
 	
 	&__menu-content {
-		
-			position: relative;
+		display: block;
+		margin-top:-80px;
+	
+		@mixin atMedium {
+			display: inherit;
+			margin-top: inherit;
+		}
+			
 	
 	}
 	
@@ -50,8 +135,12 @@
         position: absolute;
         z-index: 10;
         top: 20px;
-        right: 10px;
-     
+        right: 15px;
+     	display: block;
+
+     	@mixin atMedium {
+     		display: none;
+     	}
        
         &::before {
             content: "";
@@ -84,6 +173,8 @@
             background-color: #000;
           
         }
+
+
         
        
     }

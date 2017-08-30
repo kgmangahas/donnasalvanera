@@ -39,27 +39,20 @@
 	
 		
 	ul {
-				margin: 0;
-				padding: 0;
-				@mixin clearFix;
-				
-     position: absolute;
-     left:0;
-		top: 70px;
+		margin: 0;
+		padding: 0;
+		@mixin clearFix;		
+		position: absolute;
+		left:0;
+		top: 70px;		
 
 		
-				
-		@mixin atSmall {
-			
-			padding-left: 20px;
-			
-		}
 		
 		@mixin atMedium {
-				margin: 0;
-				padding: 0;
-				@mixin clearFix;
-				top:auto;
+			margin: 0;
+			padding: 0;
+			@mixin clearFix;
+			top:auto;
 		}
 		
         
@@ -69,36 +62,29 @@
 
     	margin: 0;
     	padding: 0;
-        list-style: none;
-        @mixin clearFix;
+    	list-style: none;
+    	@mixin clearFix;
 
-       
-      	width: 100%;
-        letter-spacing: .122em;
-				
-				display: inline-block;
-				
-				
-				
-				
-				
-			
-			@mixin atSmall {
-				margin-top: 10px;
-				
-				 padding-right: 11px;
-				display: inline-block;
-				background-color: transparent;
-				width: auto;
-			}
-        @mixin atMedium {
-					background-color: transparent;
-            padding-right: 60px;
-            float: left;
-            display: block;
-					width: auto;
-					
-        }
+
+    	width: 100%;
+    	letter-spacing: .122em;
+
+    	display: inline-block;
+
+
+
+
+
+
+    	
+    	@mixin atMedium {
+    		background-color: transparent;
+    		padding-right: 60px;
+    		float: left;
+    		display: block;
+    		width: auto;
+
+    	}
 			
     }
     
@@ -114,7 +100,7 @@
     }
     
     a {
-    	color: #A8A19B;
+    	color: $darkRose;
 
     	text-align: center;
     	text-decoration: none;
@@ -127,19 +113,17 @@
 		
     	
 
-    	font-size: .75rem;
-    	color: #000;
+    	
+    	
     	background-color: rgba($blushPink, .76);
     	width:100%;
 
     	z-index: 21;
+		font-size: 1.75rem;
+    	
 
     	@mixin atSmall {
-    		font-size: 1rem;
-    		border-radius: 5px;
-    		padding: 15px 20px;
-    		margin-left: inherit;
-    		margin-right: inherit;
+    		font-size: 2.4375rem;
     	}
         
         @mixin atMedium {
@@ -147,6 +131,7 @@
             font-size: 1.125rem;
             padding: 12px 0;
             color: #A8A19B;
+            font-weight: 400;
             &.is-current-link {
                 color: #fabb69;
             }
