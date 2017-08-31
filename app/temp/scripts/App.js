@@ -65,74 +65,68 @@
 /************************************************************************/
 /******/ ([
 /* 0 */
-/***/ (function(module, exports, __webpack_require__) {
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
+Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__modules_MobileMenu__ = __webpack_require__(1);
 
 
-var _MobileMenu = __webpack_require__(1);
 
-var _MobileMenu2 = _interopRequireDefault(_MobileMenu);
-
-function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
-
-var mobileMenu = new _MobileMenu2.default();
+var mobileMenu = new __WEBPACK_IMPORTED_MODULE_0__modules_MobileMenu__["a" /* default */]();
 
 /***/ }),
 /* 1 */
-/***/ (function(module, exports, __webpack_require__) {
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_jquery__ = __webpack_require__(2);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_jquery___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0_jquery__);
 
 
-Object.defineProperty(exports, "__esModule", {
-    value: true
-});
+class MobileMenu {
 
-var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
+    constructor() {
 
-var _jquery = __webpack_require__(2);
+        this.siteHeader = __WEBPACK_IMPORTED_MODULE_0_jquery___default()(".site-header");
+        this.logo = __WEBPACK_IMPORTED_MODULE_0_jquery___default()(".site-header__logo");
+        this.menuIcon = __WEBPACK_IMPORTED_MODULE_0_jquery___default()(".site-header__menu-icon");
+        this.menuContent = __WEBPACK_IMPORTED_MODULE_0_jquery___default()(".site-header__menu-content");
+        this.name = __WEBPACK_IMPORTED_MODULE_0_jquery___default()(".site-header__name");
+        this.socialIcons = __WEBPACK_IMPORTED_MODULE_0_jquery___default()(".site-header__b-accent");
 
-var _jquery2 = _interopRequireDefault(_jquery);
-
-function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
-
-function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
-
-var MobileMenu = function () {
-    function MobileMenu() {
-        _classCallCheck(this, MobileMenu);
-
-        this.siteHeader = (0, _jquery2.default)(".site-header");
-        this.menuIcon = (0, _jquery2.default)(".site-header__menu-icon");
-        this.menuContent = (0, _jquery2.default)(".site-header__menu-content");
         this.events();
-        /*
-        $(".site-header__menu-icon").click(function() {
+        
+       __WEBPACK_IMPORTED_MODULE_0_jquery___default()(".site-header__menu-icon").click(function() {
           console.log("THe top right icon was clicked");
-        });
-        */
+       });
+       
     }
+    events() {
+      
+        this.menuIcon.click(this.toggleTheMenu.bind(this));
+       
+    }
+    
+    toggleTheMenu() {
+       this.menuContent.toggleClass("site-header__menu-content--is-visible");
+       this.siteHeader.toggleClass("site-header--is-expanded");
+       this.logo.toggleClass("site-header__logo--is-not-visible");
+        this.name.toggleClass("site-header__name--is-visible");
+        this.socialIcons.toggleClass("site-header__b-accent--is-visible");
+        this.menuIcon.toggleClass("site-header__menu-icon--close-x");
+       /* this.menuContent.toggleClass("site-header__menu-content--is-visible");
+        this.siteHeader.toggleClass("site-header--is-expanded");
+        this.menuIcon.toggleClass("site-header__menu-icon--close-x");*/
+      
+    }
+    
+    
+    
+}
 
-    _createClass(MobileMenu, [{
-        key: "events",
-        value: function events() {
-            this.menuIcon.click(this.toggleTheMenu.bind(this));
-        }
-    }, {
-        key: "toggleTheMenu",
-        value: function toggleTheMenu() {
 
-            this.menuContent.toggleClass("site-header__menu-content--is-visible");
-            this.siteHeader.toggleClass("site-header--is-expanded");
-            this.menuIcon.toggleClass("site-header__menu-icon--close-x");
-        }
-    }]);
-
-    return MobileMenu;
-}();
-
-exports.default = MobileMenu;
+/* harmony default export */ __webpack_exports__["a"] = (MobileMenu);
 
 /***/ }),
 /* 2 */

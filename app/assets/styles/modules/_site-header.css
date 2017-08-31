@@ -4,9 +4,14 @@
 	width: 100%;	
 	position: relative;	
 	z-index: 30;
-	/* background-color: $blushPink;
-	height: 100vh;
-	 */
+	transition-timing-function: ease-in;
+	transition: background-color .3s, height .3s; 
+	
+	 &--is-expanded {
+	 	 background-color: $blushPink;
+		height: 100vh;
+	 }
+
 	@mixin atMedium {
 
 		height: 200px;
@@ -21,12 +26,13 @@
 		margin-left: auto;
 		margin-right: auto;
 		margin-top: 120px;
-		width: 100%;
-		display: block;
-		
+		width: 100%;		
 		display: none;
-		
-		
+
+		&--is-visible {
+			display: block;
+		}
+
 		
 	}
 
@@ -49,18 +55,25 @@
 	}
 
 	&__logo {		
-	
 		
 		
 		
+		
+		opacity: 1;
 		position: absolute;
 		width: 280px;
 		
 		top: 20%;
 		left: 50%;
 		transform: translate(-50%,-50%);
+
+		
 		
 		display: block;
+
+		&--is-not-visible {
+			opacity: 0;
+		}
 		
 		@mixin atSmall {
 			display: block;
@@ -82,11 +95,19 @@
 		font-size: 2rem;
 		font-style: italic;
 		font-weight: 300;
-		
 		display: flex;
-		
 		text-align: center;
 		padding: 12% 40px;
+		display: flex;
+		opacity: 0;
+
+		translate: opacity .3s ease-out;
+
+		&--is-visible {
+			opacity: 1;
+			transform: scale(1);
+		}
+
 		@mixin atMedium{
 			display: none;
 		}
@@ -115,8 +136,14 @@
 	
 	
 	&__menu-content {
-		display: block;
+		display: none;
 		margin-top:-80px;
+		
+
+		&--is-visible {
+			display:block;
+		}
+
 	
 		@mixin atMedium {
 			display: inherit;
@@ -130,13 +157,14 @@
 
 		
 		  width: 23px;
-        height: 17px;
+        height: 23px;
         
         position: absolute;
         z-index: 10;
         top: 20px;
         right: 15px;
-     	display: block;
+     	
+			
 
      	@mixin atMedium {
      		display: none;
@@ -149,17 +177,26 @@
             left: 0;
             width: 23px;
             height: 2px;
-            background-color: #000;
+            background-color: $black;
+             transform-origin: 0 0;
+             
+            transition: transform .3s ease-out;
            
         }
         
         &__middle {
             position: absolute;
-            top: 7px;
+            top: 10px;
             left: 0;
             width: 23px;
             height: 2px;
-            background-color: #000;
+            background-color: $black;
+             
+            transform-origin: 0 50%;
+            
+
+           
+            transition: all  .3s ease-out;
            
         }
         
@@ -170,9 +207,26 @@
             left: 0;
            width: 23px;
             height: 2px;
-            background-color: #000;
+            background-color: $black;
+             transform-origin: 0 100%;
+             transition: transform .3s ease-out;
           
         }
+
+        &--close-x {
+        &::before {
+            transform: rotate(45deg) scaleX(1.39);           
+            
+        }
+        
+        .site-header__menu-icon__middle {
+            opacity: 0;
+            transform: scaleX(0);
+        }
+        &::after {
+            transform: rotate(-45deg) scaleX(1.39) translateY(1px);
+        }
+    }
 
 
         

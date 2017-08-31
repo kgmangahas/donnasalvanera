@@ -534,13 +534,18 @@ input[type="text"] {
 	width: 100%;	
 	position: relative;	
 	z-index: 30;
+	-webkit-transition-timing-function: ease-in;
+	        transition-timing-function: ease-in;
+	-webkit-transition: background-color .3s, height .3s;
+	transition: background-color .3s, height .3s;
 	
 	
 }
 
-/* background-color: $blushPink;
-	height: 100vh;
-	 */
+.site-header--is-expanded {
+	 	 background-color: #ffe0e2;
+		height: 100vh;
+	 }
 
 @media (min-width:800px) {
 
@@ -561,14 +566,15 @@ input[type="text"] {
 		margin-left: auto;
 		margin-right: auto;
 		margin-top: 120px;
-		width: 100%;
-		display: block;
-		
+		width: 100%;		
 		display: none;
-		
-		
+
 		
 	}
+
+.site-header__b-accent--is-visible {
+			display: block;
+		}
 
 .site-header__b-accent:after {
 
@@ -595,10 +601,11 @@ input[type="text"] {
     }
 
 .site-header__logo {		
-	
 		
 		
 		
+		
+		opacity: 1;
 		position: absolute;
 		width: 280px;
 		
@@ -606,10 +613,16 @@ input[type="text"] {
 		left: 50%;
 		-webkit-transform: translate(-50%,-50%);
 		        transform: translate(-50%,-50%);
+
+		
 		
 		display: block;
 		
 	}
+
+.site-header__logo--is-not-visible {
+			opacity: 0;
+		}
 
 @media (min-width:530px) {
 
@@ -636,17 +649,23 @@ input[type="text"] {
 		font-size: 2rem;
 		font-style: italic;
 		font-weight: 300;
-		
 		display: -webkit-box;
-		
 		display: -ms-flexbox;
-		
 		display: flex;
-		
 		text-align: center;
 		padding: 12% 40px;
+		display: flex;
+		opacity: 0;
+
+		translate: opacity .3s ease-out;
 
 	}
+
+.site-header__name--is-visible {
+			opacity: 1;
+			-webkit-transform: scale(1);
+			        transform: scale(1);
+		}
 
 @media (min-width:800px) {
 
@@ -679,11 +698,15 @@ input[type="text"] {
     }
 
 .site-header__menu-content {
-		display: block;
+		display: none;
 		margin-top:-80px;
 			
 	
 	}
+
+.site-header__menu-content--is-visible {
+			display:block;
+		}
 
 @media (min-width:800px) {
 
@@ -699,13 +722,12 @@ input[type="text"] {
 
 		
 		  width: 23px;
-        height: 17px;
+        height: 23px;
         
         position: absolute;
         z-index: 10;
         top: 20px;
         right: 15px;
-     	display: block;
 
 
         
@@ -730,17 +752,39 @@ input[type="text"] {
             left: 0;
             width: 23px;
             height: 2px;
-            background-color: #000;
+            background-color: #4A4544;
+             -webkit-transform-origin: 0 0;
+                     transform-origin: 0 0;
+             
+            -webkit-transition: -webkit-transform .3s ease-out;
+             
+            transition: -webkit-transform .3s ease-out;
+             
+            transition: transform .3s ease-out;
+             
+            transition: transform .3s ease-out, -webkit-transform .3s ease-out;
            
         }
 
 .site-header__menu-icon__middle {
             position: absolute;
-            top: 7px;
+            top: 10px;
             left: 0;
             width: 23px;
             height: 2px;
-            background-color: #000;
+            background-color: #4A4544;
+             
+            -webkit-transform-origin: 0 50%;
+             
+                    transform-origin: 0 50%;
+            
+
+           
+            -webkit-transition: all  .3s ease-out;
+            
+
+           
+            transition: all  .3s ease-out;
            
         }
 
@@ -751,8 +795,31 @@ input[type="text"] {
             left: 0;
            width: 23px;
             height: 2px;
-            background-color: #000;
+            background-color: #4A4544;
+             -webkit-transform-origin: 0 100%;
+                     transform-origin: 0 100%;
+             -webkit-transition: -webkit-transform .3s ease-out;
+             transition: -webkit-transform .3s ease-out;
+             transition: transform .3s ease-out;
+             transition: transform .3s ease-out, -webkit-transform .3s ease-out;
           
+        }
+
+.site-header__menu-icon--close-x::before {
+            -webkit-transform: rotate(45deg) scaleX(1.39);
+                    transform: rotate(45deg) scaleX(1.39);           
+            
+        }
+
+.site-header__menu-icon--close-x .site-header__menu-icon__middle {
+            opacity: 0;
+            -webkit-transform: scaleX(0);
+                    transform: scaleX(0);
+        }
+
+.site-header__menu-icon--close-x::after {
+            -webkit-transform: rotate(-45deg) scaleX(1.39) translateY(1px);
+                    transform: rotate(-45deg) scaleX(1.39) translateY(1px);
         }
 
 .primary-nav {
@@ -2107,8 +2174,4 @@ font-weight: 700;
 }
 
 @media (min-width:800px) {
-
-.social-icons {
-		display: none
-}
     }

@@ -6,7 +6,8 @@
 	padding-top: 800px;
 
 	display: block;
+
 	@mixin atMedium {
-		display: none
+	
 	}
 }
