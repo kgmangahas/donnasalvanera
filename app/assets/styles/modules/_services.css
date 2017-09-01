@@ -26,20 +26,18 @@
 
 
 	&__icon {
-		
-		margin-bottom: 0;
 
-		&--center {
-			text-align: center;
-			
-		}
+		display: block;
+        margin: 0 auto;
+       
+		
 	}
 
-	&__icon > img {
+	/* &__icon > img {
 		width: 60px;
 		height: auto;
 		
-	}
+	} */
 
 	&__border {
 

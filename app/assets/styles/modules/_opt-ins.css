@@ -54,7 +54,7 @@
 		font-weight: 400;
 		letter-spacing: 0;
 		
-
+		@mixin strikethru #FFF;
 
 		@mixin atMedium {
 			display: flex;
@@ -64,20 +64,7 @@
 		
 	}
 
-	&__title:before, &__title:after {
-		color: #fff;
-		content: '';
-		flex: 1;
-		border-bottom: solid 0 #fff;
-		margin: 0;
-
-		@mixin atSmall {
-			border-bottom: solid 1px #fff;
-			margin: auto 1em
-		}
-				
-
-	}
+	
 
 	&__submit {
 		display: block;

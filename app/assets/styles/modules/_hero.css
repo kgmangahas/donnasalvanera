@@ -2,18 +2,18 @@
 	
 	
 	position: relative;
-	z-index: 1;
-	
+	z-index: 1;	
 	
 	
 	&__top-padding {
-	
-		position: relative;
-		padding-top: 0;
-		 margin-top: -130px; 
-		@mixin atMedium {
-			position: relative;
-			top:0;
+			
+		margin-top: 50px;
+
+		@mixin atSmall {
+			margin-top: 70px;
+		}
+		
+		@mixin atMedium {				
 			margin-top: 10px;
 		}
 		

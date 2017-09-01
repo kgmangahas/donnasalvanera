@@ -1,13 +1,52 @@
 .social-icons {
-	z-index: 32;
+	text-align: center;
+	z-index: 35;
 	position: relative;
-	left: 20%;
-	
-	padding-top: 800px;
-
 	display: block;
-
+	width: 100%;
 	@mixin atMedium {
-	
+		display: none;
+	}
+
+	&--b-padding {
+		
+		position: absolute;
+		
+		left: 50%;
+		transform: translateX(-50%);
+		bottom: 5%;
+		@mixin atSmall {
+			bottom: 20%px;
+		}
+		
+	}
+
+	&__icon {
+
+		position: relative;
+		display: inline-block;
+		width: 70px;
+		height: 50px;
+		
+
+		.icon {
+			display: block;
+			position: absolute;
+			top: 50%;
+			left: 50%;
+			transform: translate(-50%,-50%);
+
+
+
+
+		}
+
+		&--footer {
+			width: 60px;
+		}
+
+
+		
+
 	}
 }

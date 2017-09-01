@@ -20,18 +20,16 @@
 	@mixin atMedium {
 		width: 700px;
 	}
+
 	
 	&--top {
-		padding-top: 100px;
+		
+		padding-top: 0;		
 		
 		
-		
-		@mixin atSmall {
-			padding-top: 90px;
-		}
 		
 		@mixin atMedium {
-			padding-top: 150px;
+			padding-top: 30px;
 			
 		}
 	}
@@ -44,7 +42,7 @@
 		@mixin clearFix;		
 		position: absolute;
 		left:0;
-		top: 70px;		
+		top: 0px;		
 
 		
 		
@@ -115,7 +113,7 @@
 
     	
     	
-    	background-color: rgba($blushPink, .76);
+    	background-color: transparent;
     	width:100%;
 
     	z-index: 21;

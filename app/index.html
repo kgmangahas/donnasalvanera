@@ -34,13 +34,11 @@
 	<body>
 		
 		<header class="site-header" role=banner>
-			<div class="container">
+			<div class="wrapper">
 				<div class="site-header__logo">
 					<a class="site-header__brand" href="/"><img src="assets/images/logo.png"></a>					
 				</div>
-				<div class="site-header__name">
-					donna&nbsp;salvanera
-				</div>
+				
 				
 				<!--navbar-->
 				<div class="site-header__menu-icon">           
@@ -49,8 +47,10 @@
 				
 				<div class="site-header__menu-content">
 
-
-				
+						
+					<div class="site-header__name">
+						donna&nbsp;salvanera
+					</div>
 					<nav class="primary-nav primary-nav--top">
 						<ul>
 							<li><a href="">HOME</a></li>
@@ -60,18 +60,21 @@
 							<li><a href="">BLOG</a></li>
 						</ul>
 					</nav>
-				</div>
-				<div class="site-header__b-accent ">
-					<div class="footer__social-media social-icons">
-					<ul>
-						<li><img src="assets/images/fb.svg" alt=""><a href=""></a></img></li>
-						<li><img src="assets/images/instagram.svg" alt=""><a href=""></a></img></li>
-						<li><img src="assets/images/twitter.svg" alt=""><a href=""></a></img></li>
-						<li><img src="assets/images/tumbler.svg" alt=""><a href=""></a></img></li>
-					</ul>
+
 					
+					<div class="social-icons social-icons--b-padding ">
+						<a href="#" class="social-icons__icon"><span class="icon icon--fb"></span></a>
+				          <a href="#" class="social-icons__icon"><span class="icon icon--twitter"></span></a>
+				          <a href="#" class="social-icons__icon"><span class="icon icon--instagram"></span></a>
+				          <a href="#" class="social-icons__icon"><span class="icon icon--tumbler"></span></a>
+									
 					</div>
+				
+
+
 				</div>
+
+				
 			</div>
 
 			
@@ -139,10 +142,9 @@
 				<div class="row row--gutters-small row__top-padding ">	
 					<div class="row__medium-6">
 						<div class="services services--center">
-							<div class="services__border">
-								<div class="services__icon services__icon--center">
-									<img src="assets/images/branding-icon.svg">
-								</div>
+							<div class="services__border">			
+								<span class="icon icon--branding services__icon">					
+								</span>				
 								
 								<p>Create your most purposeful brand through authentic strategy &amp; intentional design.</p>
 								<a class="services__link" href="">Learn more</a>
@@ -154,9 +156,8 @@
 					<div class="row__medium-6 row__top-padding--single">
 						<div class="services services--center">
 							<div class="services__border">
-								<div class="services__icon services__icon--center">
-									<img src="assets/images/webdesign-icon.png">
-								</div>
+								<span class="icon icon--webdesign services__icon">					
+									</span>	
 								
 								<p>Take your business to heartfelt new heights through website design.</p>
 								<a class="services__link" href="">Learn more</a>
@@ -216,6 +217,8 @@
 		<div class="wrapper ">
 
 			<div class="footer">
+				
+
 				<div class="footer__sign ">
 					<img src="assets/images/ds.png" alt="">
 				</div>
@@ -223,12 +226,11 @@
 				<p class="footer__copy">&copy; 2017 DS Digital Studio</p>
 
 				<div class="footer__social-media">
-					<ul>
-						<li><img src="assets/images/fb.svg" alt=""><a href=""></a></img></li>
-						<li><img src="assets/images/instagram.svg" alt=""><a href=""></a></img></li>
-						<li><img src="assets/images/twitter.svg" alt=""><a href=""></a></img></li>
-						<li><img src="assets/images/tumbler.svg" alt=""><a href=""></a></img></li>
-					</ul>
+					<a href="#" class="social-icons__icon social-icons__icon--footer"><span class="icon icon--fb"></span></a>
+				          <a href="#" class="social-icons__icon social-icons__icon--footer"><span class="icon icon--twitter"></span></a>
+				          <a href="#" class="social-icons__icon social-icons__icon--footer"><span class="icon icon--instagram"></span></a>
+				          <a href="#" class="social-icons__icon social-icons__icon--footer"><span class="icon icon--tumbler"></span></a>
+							
 					
 				</div>
 			
