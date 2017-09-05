@@ -10,6 +10,7 @@ class MobileMenu {
         this.menuContent = $(".site-header__menu-content");
         this.name = $(".site-header__name");
         this.socialIcons = $(".site-header__b-accent");
+        this.body = $("body");
 
         this.events();
         
@@ -28,8 +29,9 @@ class MobileMenu {
        this.menuContent.toggleClass("site-header__menu-content--is-visible");
        this.siteHeader.toggleClass("site-header--is-expanded");
        this.logo.toggleClass("site-header__logo--is-not-visible");
-        this.name.toggleClass("site-header__name--is-visible");
-        this.socialIcons.toggleClass("site-header__b-accent--is-visible");
+       this.body.toggleClass("body--no-scroll");
+       /* this.name.toggleClass("site-header__name--is-visible");
+        this.socialIcons.toggleClass("site-header__b-accent--is-visible"); */
         this.menuIcon.toggleClass("site-header__menu-icon--close-x");
        /* this.menuContent.toggleClass("site-header__menu-content--is-visible");
         this.siteHeader.toggleClass("site-header--is-expanded");

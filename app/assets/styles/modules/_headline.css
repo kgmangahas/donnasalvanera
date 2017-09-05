@@ -31,6 +31,8 @@
 
 		@mixin atMedium {
 			margin-top: 5px;
+
+
 		}
 	}
 
@@ -97,6 +99,7 @@
     	@mixin atLarge {
     		font-size: 1.375rem;
     		letter-spacing: .262em;
+    		margin-top: -35px;
     	}
     }
 

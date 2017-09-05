@@ -1,12 +1,16 @@
 .go-to-next {
 	position: relative;
 font-weight: 700;
-	margin-left: auto;
-	margin-right: auto;
-	
+	margin: 0 auto;
 	width: 100%;
+
+
+	
+
 	@mixin atMedium {
 		width: 50%;
+		margin-top: -30px;
+		
 	}
 
 	&--center {
@@ -42,6 +46,9 @@ font-weight: 700;
 		display: inherit;
 		text-align: center;
 		width: 100%;
+		
+
+
 		ul {
 			
 			margin: 0;
@@ -87,6 +94,7 @@ font-weight: 700;
 			}
 		}
 	}
+
 
 
 

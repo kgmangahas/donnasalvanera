@@ -10,7 +10,7 @@
 		
 		padding: 0;  
 		@mixin atSmall {
-			padding: 6.375rem 0 4rem 0;
+			padding:  4rem 0 8rem 0;
 		}
 		
 	}

@@ -14,7 +14,7 @@
 		}
 		
 		@mixin atMedium {				
-			margin-top: 10px;
+			margin-top: -10px;
 		}
 		
 	
@@ -62,7 +62,7 @@
 	
 	&__title {
 		font-style: italic;
-		color: $darkRose;
+		color: $darkPeach;
 		font-size: 1.4375rem;
 		font-weight: 400;
 		

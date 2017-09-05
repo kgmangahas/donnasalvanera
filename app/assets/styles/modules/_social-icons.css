@@ -13,10 +13,11 @@
 		position: absolute;
 		
 		left: 50%;
+		top:70%;
 		transform: translateX(-50%);
-		bottom: 5%;
+		
 		@mixin atSmall {
-			bottom: 20%px;
+			
 		}
 		
 	}
@@ -36,10 +37,9 @@
 			left: 50%;
 			transform: translate(-50%,-50%);
 
-
-
-
 		}
+
+		
 
 		&--footer {
 			width: 60px;
@@ -49,4 +49,6 @@
 		
 
 	}
+
+	
 }

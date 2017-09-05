@@ -8,6 +8,14 @@ body {
    
 }
 
+.body--no-scroll {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    overflow: hidden;
+
+}
+
 
 img {
     width: 100%;
@@ -42,9 +50,9 @@ font-size: 1.375rem;
 input[type="submit"],
 button[type="submit"] {
     display: inline-block;
-    padding: 15px 40px;
+    padding: 15px 50px;
     margin-bottom: 0;
-    font-size: 1.25rem;
+    font-size: 1rem;
     font-weight: 400;
     
     text-align: center;
@@ -60,7 +68,7 @@ button[type="submit"] {
     font-family: 'Lato', sans-serif;
 
     @mixin atSmall {
-        font-size: 1.625rem;
+        font-size: 1rem;
     }
 }
 

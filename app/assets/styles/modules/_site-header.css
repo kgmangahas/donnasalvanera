@@ -29,7 +29,7 @@
 
 
 	 &--is-expanded {
-	 	position: fixed;
+	 	position:relative;
 	 	background-color: $blushPink;
 		height: 100vh;
 
@@ -94,24 +94,23 @@
 		font-weight: 300;
 		display: flex;
 		text-align: center;
-		padding: 25% 40px;
+		
 		display: flex;
-		opacity: 0;
+		
 
 
 		@mixin strikethru #FFF;
 
-		translate: opacity .3s ease-out;
 
 		&--is-visible {
-			opacity: 1;
+			
 			transform: scale(1);
 		}
 		
 		@mixin atSmall {
 			font-size: 2rem;
 			display: flex;
-			padding: 12% 40px;
+			
 		}
 
 		
@@ -129,17 +128,23 @@
 	&__menu-content {
 		
 		
-		margin-top:-80px;
-		display: none;
+		vertical-align: center;
+		opacity: 0;
+		
+		
 
 		&--is-visible {
-			display:block;
+			opacity: 1;
 		}
 
+		@mixin atSmall {
+			margin-top: 0px;
+		}
 	
 		@mixin atMedium {
 			display: block;			
 			margin-top: 0;
+			opacity: 1;
 		}
 			
 	
