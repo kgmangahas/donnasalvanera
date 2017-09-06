@@ -8,6 +8,15 @@
 		display: none;
 	}
 
+
+	&__menu {
+		opacity: 0;		
+		
+		animation: FadeInIcon 1s ease-in ;
+		animation-fill-mode: both;
+		animation-delay: 1.5s;
+	}
+
 	&--b-padding {
 		
 		position: absolute;
@@ -48,6 +57,23 @@
 
 		
 
+	}
+
+	
+}
+
+@keyframes FadeInIcon {
+	0% {
+		opacity: 0;
+		
+	}
+
+	50% {
+		opacity: .5;
+	}
+	100% {
+		
+		opacity: 1;
 	}
 
 	

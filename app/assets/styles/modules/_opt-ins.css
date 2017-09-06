@@ -24,6 +24,7 @@
 
 
 	&__content {
+		
 		position: relative;
 		margin-left: auto;
 		margin-right: auto;
@@ -49,12 +50,12 @@
 	&__title {
 
 		
-		display: block;
+		
 		font-style: italic;
 		font-size: 1.875rem;
-		font-weight: 400;
-		letter-spacing: 0;
+		font-weight: 400;		
 		text-align: center;
+		display: flex;
 		
 		@mixin strikethru #FFF;
 

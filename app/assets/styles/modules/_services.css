@@ -50,7 +50,19 @@
 			padding: 25px;
 		}
 
+
+
 	}
+
+	 &__border:last-child {
+	
+		padding-top: 0;
+	
+		@mixin atSmall {
+			padding-top: 25px;
+		}
+	
+	} 
 
 	&__border > p {
 		margin: 10px 20px 30px 20px;

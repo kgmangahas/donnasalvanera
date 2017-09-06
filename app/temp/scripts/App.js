@@ -95,6 +95,7 @@ class MobileMenu {
         this.name = __WEBPACK_IMPORTED_MODULE_0_jquery___default()(".site-header__name");
         this.socialIcons = __WEBPACK_IMPORTED_MODULE_0_jquery___default()(".site-header__b-accent");
         this.body = __WEBPACK_IMPORTED_MODULE_0_jquery___default()("body");
+        this.nav = __WEBPACK_IMPORTED_MODULE_0_jquery___default()(".primary-nav a");
 
         this.events();
         
@@ -117,6 +118,7 @@ class MobileMenu {
        /* this.name.toggleClass("site-header__name--is-visible");
         this.socialIcons.toggleClass("site-header__b-accent--is-visible"); */
         this.menuIcon.toggleClass("site-header__menu-icon--close-x");
+    
        /* this.menuContent.toggleClass("site-header__menu-content--is-visible");
         this.siteHeader.toggleClass("site-header--is-expanded");
         this.menuIcon.toggleClass("site-header__menu-icon--close-x");*/

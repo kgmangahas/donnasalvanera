@@ -75,17 +75,50 @@
     	display: inline-block;
 
 
+		opacity: 0;
+		animation: FadeInNav 1.3s ease-in;
+		animation-fill-mode: forwards;
+		
+		&:nth-child(1) {			
+			animation-delay: .2s;		
+			
+		}
+		
+		&:nth-child(2) {
+			
+			animation-delay: .5s;
+			
+		}
 
+		&:nth-child(3) {
+			
+			animation-delay: .8s;
+			
+		}
+
+		&:nth-child(4) {
+		
+			animation-delay: 1.1s;
+			
+		}
+
+		&:nth-child(5) {
+			
+			animation-delay: 1.3s;
+			
+		}
 
 
 
     	
     	@mixin atMedium {
+    		animation: none;
     		background-color: transparent;
     		padding-right: 60px;
     		float: left;
     		display: block;
     		width: auto;
+    		opacity: 1;
 
     	}
 			
@@ -116,6 +149,7 @@
     	z-index: 21;
 		font-size: 1.75rem;
     	
+    	
 		
 		&:hover {
 		
@@ -136,9 +170,14 @@
 
     	@mixin atSmall {
     		font-size: 2.4375rem;
+    		
+    		transition: opacity .3s ease;
+
+    		
     	}
         
         @mixin atMedium {
+        
             background-color: transparent;
             font-size: 1.125rem;
             padding: 12px 0;
@@ -148,7 +187,25 @@
                 color: #fabb69;
             }
         }
+
+
+        
         
     }
 	
+}
+
+
+@keyframes FadeInNav {
+	0%{
+		opacity: 0;
+	}
+
+	50% {
+		opacity: .5;
+	}
+
+	100% {
+		opacity: 1;
+	}
 }

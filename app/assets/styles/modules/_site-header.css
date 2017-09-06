@@ -29,7 +29,7 @@
 
 
 	 &--is-expanded {
-	 	position:relative;
+	 	position:fixed;
 	 	background-color: $blushPink;
 		height: 100vh;
 
@@ -130,7 +130,7 @@
 		
 		vertical-align: center;
 		opacity: 0;
-		
+		transition: opacity .3s ease-in-out;
 		
 
 		&--is-visible {
@@ -176,8 +176,8 @@
             height: 2px;
             background-color: $black;
              transform-origin: 0 0;
-             
-            transition: transform .3s ease-out;
+            
+            transition: all .3s ease-out;
            
         }
         
@@ -211,8 +211,13 @@
         }
 
         &--close-x {
+			 top: 15px;
+        right: 31px;
+
         &::before {
-            transform: rotate(45deg) scaleX(1.39);           
+			
+            transform: rotate(45deg) scaleX(1.39);  
+                    
             
         }
         
