@@ -81,13 +81,13 @@
 		
 		@mixin atSmall {			
 			width: 450px;	
-
+			
 		
 		}
 		
 		@mixin atMedium {			
 			width: 680px;
-
+			opacity: 1;
 			
 		}
 		

@@ -12,12 +12,16 @@ class MobileMenu {
         this.socialIcons = $(".site-header__b-accent");
         this.body = $("body");
         this.nav = $(".primary-nav a");
+        this.window = $(window);
+        this.isMobileMenu = false;
 
         this.events();
         
-       $(".site-header__menu-icon").click(function() {
+       /*$(".site-header__menu-icon").click(function() {
           console.log("THe top right icon was clicked");
-       });
+       });*/
+
+       
        
     }
     events() {
@@ -34,12 +38,14 @@ class MobileMenu {
        /* this.name.toggleClass("site-header__name--is-visible");
         this.socialIcons.toggleClass("site-header__b-accent--is-visible"); */
         this.menuIcon.toggleClass("site-header__menu-icon--close-x");
-    
+       
        /* this.menuContent.toggleClass("site-header__menu-content--is-visible");
         this.siteHeader.toggleClass("site-header--is-expanded");
         this.menuIcon.toggleClass("site-header__menu-icon--close-x");*/
       
     }
+
+   
     
     
     

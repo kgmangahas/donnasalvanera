@@ -15,6 +15,12 @@
 		animation: FadeInIcon 1s ease-in ;
 		animation-fill-mode: both;
 		animation-delay: 1.5s;
+
+
+		@mixin atMedium {
+			display: none;
+			
+		}
 	}
 
 	&--b-padding {

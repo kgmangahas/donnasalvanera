@@ -640,7 +640,8 @@ input[type="text"] {
 @media (min-width:800px) {
 
 .site-header__logo {			
-			width: 680px
+			width: 680px;
+			opacity: 1
 		
 	}
     }
@@ -2360,6 +2361,13 @@ font-weight: 700;
 		-webkit-animation-delay: 1.5s;
 		        animation-delay: 1.5s;
 	}
+
+@media (min-width:800px) {
+
+.social-icons__menu {
+			display: none
+	}
+    }
 
 .social-icons--b-padding {
 		
