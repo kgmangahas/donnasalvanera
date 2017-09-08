@@ -580,9 +580,20 @@ input[type="text"] {
 	 	background-color: #ffe0e2;
 		height: 100vh;
 
+		
+	 }
+
+@media (min-width:800px) {
+
+.site-header--is-expanded {
+			background-color: transparent;
+			position: relative;
+			height: 200px;
+			display: block
 
 		
 	 }
+    }
 
 .site-header__b-accent {
 		position: relative;

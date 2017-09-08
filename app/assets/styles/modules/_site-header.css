@@ -32,7 +32,14 @@
 	 	position:fixed;
 	 	background-color: $blushPink;
 		height: 100vh;
+		
 
+		@mixin atMedium {
+			background-color: transparent;
+			position: relative;
+			height: 200px;
+			display: block;
+		}
 
 		
 	 }
