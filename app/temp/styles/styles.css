@@ -813,9 +813,9 @@ input[type="text"] {
              -webkit-transform-origin: 0 0;
                      transform-origin: 0 0;
             
-            -webkit-transition: all .3s ease-out;
+            -webkit-transition: all .2s ease-out;
             
-            transition: all .3s ease-out;
+            transition: all .2s ease-out;
            
         }
 
@@ -833,11 +833,11 @@ input[type="text"] {
             
 
            
-            -webkit-transition: all  .3s ease-out;
+            -webkit-transition: all  .2s ease-out;
             
 
            
-            transition: all  .3s ease-out;
+            transition: all  .2s ease-out;
            
         }
 
@@ -851,16 +851,16 @@ input[type="text"] {
             background-color: #4A4544;
              -webkit-transform-origin: 0 100%;
                      transform-origin: 0 100%;
-             -webkit-transition: -webkit-transform .3s ease-out;
-             transition: -webkit-transform .3s ease-out;
-             transition: transform .3s ease-out;
-             transition: transform .3s ease-out, -webkit-transform .3s ease-out;
+             -webkit-transition: -webkit-transform .2s ease-out;
+             transition: -webkit-transform .2s ease-out;
+             transition: transform .2s ease-out;
+             transition: transform .2s ease-out, -webkit-transform .2s ease-out;
           
         }
 
 .site-header__menu-icon--close-x {
 			 top: 15px;
-        right: 31px;
+        right: 15px;
     }
 
 .site-header__menu-icon--close-x::before {

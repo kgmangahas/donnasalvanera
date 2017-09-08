@@ -93,9 +93,9 @@ class MobileMenu {
         this.menuIcon = __WEBPACK_IMPORTED_MODULE_0_jquery___default()(".site-header__menu-icon");
         this.menuContent = __WEBPACK_IMPORTED_MODULE_0_jquery___default()(".site-header__menu-content");
         this.name = __WEBPACK_IMPORTED_MODULE_0_jquery___default()(".site-header__name");
-        this.socialIcons = __WEBPACK_IMPORTED_MODULE_0_jquery___default()(".site-header__b-accent");
+        this.socialIcons = __WEBPACK_IMPORTED_MODULE_0_jquery___default()(".social-icons");
         this.body = __WEBPACK_IMPORTED_MODULE_0_jquery___default()("body");
-        this.nav = __WEBPACK_IMPORTED_MODULE_0_jquery___default()(".primary-nav a");
+        this.nav = __WEBPACK_IMPORTED_MODULE_0_jquery___default()(".primary-nav");
         this.window = __WEBPACK_IMPORTED_MODULE_0_jquery___default()(window);
         this.isMobileMenu = false;
 
@@ -123,6 +123,18 @@ class MobileMenu {
         this.socialIcons.toggleClass("site-header__b-accent--is-visible"); */
         this.menuIcon.toggleClass("site-header__menu-icon--close-x");
        
+
+       if (this.window.height() < 650) {
+          this.socialIcons.css("top","80%");
+          this.nav.css("margin-top", "30px");
+       }
+
+
+       if ( this.window.height() > 1000 ) {
+        console.log("this is over 1000");
+          this.socialIcons.css("top","60%");
+         
+       }
        /* this.menuContent.toggleClass("site-header__menu-content--is-visible");
         this.siteHeader.toggleClass("site-header--is-expanded");
         this.menuIcon.toggleClass("site-header__menu-icon--close-x");*/
