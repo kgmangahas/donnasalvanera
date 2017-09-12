@@ -450,13 +450,17 @@ template {
   display: none;
 }
 
+html {
+    overflow-x: hidden;
+}
+
 body {
     font-family: 'Lato', sans-serif;
     color: #4A4544;
-		max-width: 100%;
+	max-width: 100%;
         
     overflow-x: hidden;
-   
+   position: relative;
    
 }
 
@@ -552,6 +556,29 @@ input[type="text"] {
 	
 }
 
+.site-header__wrapper {
+
+
+		width: 100%;
+		max-width: 799px;
+		margin-left: auto;
+		margin-right: auto;
+		
+		
+	
+	}
+
+@media (min-width:800px) {
+
+.site-header__wrapper {
+			width: 100%;
+			max-width: 1200px
+		
+		
+	
+	}
+    }
+
 @media (min-width:530px) {
 
 .site-header {
@@ -580,9 +607,20 @@ input[type="text"] {
 	 	background-color: #ffe0e2;
 		height: 100vh;
 
+		
+	 }
+
+@media (min-width:800px) {
+
+.site-header--is-expanded {
+			background-color: transparent;
+			position: relative;
+			height: 200px;
+			display: block
 
 		
 	 }
+    }
 
 .site-header__b-accent {
 		position: relative;
@@ -629,7 +667,8 @@ input[type="text"] {
 @media (min-width:800px) {
 
 .site-header__logo {			
-			width: 680px
+			width: 680px;
+			opacity: 1
 		
 	}
     }
@@ -774,9 +813,9 @@ input[type="text"] {
              -webkit-transform-origin: 0 0;
                      transform-origin: 0 0;
             
-            -webkit-transition: all .3s ease-out;
+            -webkit-transition: all .2s ease-out;
             
-            transition: all .3s ease-out;
+            transition: all .2s ease-out;
            
         }
 
@@ -794,11 +833,11 @@ input[type="text"] {
             
 
            
-            -webkit-transition: all  .3s ease-out;
+            -webkit-transition: all  .2s ease-out;
             
 
            
-            transition: all  .3s ease-out;
+            transition: all  .2s ease-out;
            
         }
 
@@ -812,16 +851,16 @@ input[type="text"] {
             background-color: #4A4544;
              -webkit-transform-origin: 0 100%;
                      transform-origin: 0 100%;
-             -webkit-transition: -webkit-transform .3s ease-out;
-             transition: -webkit-transform .3s ease-out;
-             transition: transform .3s ease-out;
-             transition: transform .3s ease-out, -webkit-transform .3s ease-out;
+             -webkit-transition: -webkit-transform .2s ease-out;
+             transition: -webkit-transform .2s ease-out;
+             transition: transform .2s ease-out;
+             transition: transform .2s ease-out, -webkit-transform .2s ease-out;
           
         }
 
 .site-header__menu-icon--close-x {
 			 top: 15px;
-        right: 31px;
+        right: 15px;
     }
 
 .site-header__menu-icon--close-x::before {
@@ -2349,6 +2388,13 @@ font-weight: 700;
 		-webkit-animation-delay: 1.5s;
 		        animation-delay: 1.5s;
 	}
+
+@media (min-width:800px) {
+
+.social-icons__menu {
+			display: none
+	}
+    }
 
 .social-icons--b-padding {
 		
