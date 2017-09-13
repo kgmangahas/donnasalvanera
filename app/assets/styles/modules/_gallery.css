@@ -1,7 +1,7 @@
 .gallery {
 	position: relative;
 	border: 2px solid rgba($blushPink,.5);
-
+	margin-bottom: 5px;
 
 	
 
@@ -27,7 +27,7 @@
 
 
 	&__text {
-		color: $black;
+		color: $darkgray;
 		position: absolute;
 		top: 50%;
 		left: 50%;

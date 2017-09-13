@@ -2663,6 +2663,7 @@ Instead edit gulp/template/sprite */
 .gallery {
 	position: relative;
 	border: 2px solid rgba(255,224,226,.5);
+	margin-bottom: 5px;
 
 	
 }
@@ -2686,7 +2687,7 @@ Instead edit gulp/template/sprite */
 	}
 
 .gallery__text {
-		color: #4A4544;
+		color: #95989A;
 		position: absolute;
 		top: 50%;
 		left: 50%;
