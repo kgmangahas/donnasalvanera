@@ -1,0 +1,44 @@
+.gallery {
+	position: relative;
+	border: 2px solid rgba($blushPink,.5);
+
+
+	
+
+	&__overlay {
+		position: absolute;
+	  top: 0;
+	  bottom: 0;
+	  left: 0;
+	  right: 0;
+	  height: 100%;
+	  width: 100%;
+	
+	  background-color: rgba($blushPink,.5);
+		opacity: 0;
+		transition: .5s ease;
+
+	 
+	  
+	}
+
+
+	
+
+
+	&__text {
+		color: $black;
+		position: absolute;
+		top: 50%;
+		left: 50%;
+		
+		transform: translate(-50%,-50%);
+	}
+
+
+	&:hover &__overlay   {
+		opacity: 1;
+	}
+
+	
+}

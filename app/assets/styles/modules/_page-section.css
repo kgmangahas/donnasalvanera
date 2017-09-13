@@ -14,5 +14,31 @@
 		}
 		
 	}
+
+	&__top-alignment-header {
+		padding-top: 4rem;
+
+		@mixin atSmall {
+			padding-top: 6rem;
+		}
+
+		@mixin atMedium {
+			padding-top: 6rem;
+		}
+
+
+	}
+
+	&__t-margin-small {
+		transform: translateY(-60px);
+		padding-bottom: 0;
+		@mixin atSmall {
+			transform: translateY(-50px);
+		}
+		@mixin atMedium {
+			transform: translateY(-100px);
+		}
+
+	}
 		
 }

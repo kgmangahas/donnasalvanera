@@ -1,10 +1,40 @@
 .about {
 	position: relative;
 
-	&__text-content {
+
+	&__hello {
+
+
+		&--center {
+			text-align: center;
+		}
 		
 
+
+		img {
+			width: 40%;
+
+			@mixin atMedium {
+				width: 50%;
+			}
+		}
+	}
+
+
+	&--no-padding-until-small {
 		
+		padding-top: 20px;
+
+		@mixin atMedium {
+			padding-top:0;
+		}
+
+	}
+
+
+	&__text-content {
+		
+	
 
 	}
 	
@@ -29,6 +59,14 @@
 		}
 		
 	}
+	
+
+	&__center {
+		margin-left: auto;
+		margin-top: auto;
+
+	}
+
 
 
 		
