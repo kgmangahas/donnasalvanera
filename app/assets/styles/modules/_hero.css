@@ -67,10 +67,10 @@
 		font-weight: 400;
 		
 		@mixin atSmall {
-			font-size: 1.9375rem;
+			font-size: 1.5625rem;
 		}
 		@mixin atMedium {
-			font-size: 2.1875rem;
+			font-size: 1.6875rem;
 		}
 		
 		
@@ -82,10 +82,10 @@
 		margin-top: -.6em;
 		
 		@mixin atSmall {
-			font-size: 2.4375rem;
+			font-size: 1.6875rem;
 		}
 		@mixin atMedium {
-			font-size: 3.25rem;
+			font-size: 2.125rem;
 		}
 		
 	}
