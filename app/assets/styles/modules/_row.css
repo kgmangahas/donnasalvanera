@@ -18,11 +18,38 @@
     &--gutters-small > div {
     	padding-right: 45px;
     }
+
+    &--gutters-xs {
+    	margin-right: -5px;
+
+    	@mixin atMedium {
+    		margin-right: -15px;
+
+    	}
+    }
     
-  
+    &--gutters-xs > div {
+    	padding-right: 5px;
+
+    	@mixin atMedium {
+    		padding-right: 15px;
+    	}
+    }
+    
+  	&__sm-2 {
+		width: 50%;
+		float: left;
+	}
 
 
 	@mixin atSmall {
+
+		&__sm-2 {
+		width: 50%;
+		float: left;
+		}
+
+
 		&__sm-4 {
 		width: 33.333%;
 		float: left;
@@ -32,6 +59,8 @@
 		&__sm-5 {
 		width: 41.667%;
 		float: left;
+
+
 		}
 		
 		&__sm-7 {
@@ -62,6 +91,14 @@
 
     @mixin atMedium {
 
+
+
+
+    &__medium-3 {
+    	width: 25%;
+    	float: left;
+    }
+
 	&__medium-5 {
 		width: 41.667%;
 		float: left;
@@ -78,9 +115,11 @@
 	}
 
 
+
+
 	&__offset-3 {
 		margin-left: 25%;
-		
+
 	}
 
     }

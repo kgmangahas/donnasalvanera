@@ -38,6 +38,7 @@
 
 	&__bg {
 		position: relative;
+		width: 100%;
 		font-size: 4rem;
 		font-weight: 400;
 		color: rgba($lightgray,.8);
@@ -94,21 +95,21 @@
 
     	@mixin atMedium {
     		font-size: 1.0625rem;
-    		letter-spacing: .262em;
+    		letter-spacing: .232em;
     	}
     	@mixin atLarge {
-    		font-size: 1.375rem;
-    		letter-spacing: .262em;
+    		font-size: 1.125rem;
+    		letter-spacing: .232em;
     		margin-top: -35px;
     	}
     }
 
 
     &--t-margin {
-		margin-top: 60px;	
+		margin-top: 70px;	
 
 		@mixin atMedium {
-			margin-top: 0px;
+			margin-top: 15px;
 		}
     	
 
