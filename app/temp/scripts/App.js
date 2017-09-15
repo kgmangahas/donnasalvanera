@@ -113,6 +113,7 @@ var MobileMenu = function () {
       this.nav = (0, _jquery2.default)(".primary-nav");
       this.window = (0, _jquery2.default)(window);
       this.isMobileMenu = false;
+      this.socialIconsMain = (0, _jquery2.default)(".social-icons__icon.icon");
 
       this.events();
 
@@ -126,6 +127,7 @@ var MobileMenu = function () {
       value: function events() {
 
          this.menuIcon.click(this.toggleTheMenu.bind(this));
+         this.socialIcons.hover(this.toggleTheIcon.bind(this));
       }
    }, {
       key: "toggleTheMenu",
@@ -134,9 +136,11 @@ var MobileMenu = function () {
          this.siteHeader.toggleClass("site-header--is-expanded");
          this.logo.toggleClass("site-header__logo--is-not-visible");
          this.body.toggleClass("body--no-scroll");
+         this.menuIcon.toggleClass("site-header__menu-icon--is-clicked");
          /* this.name.toggleClass("site-header__name--is-visible");
           this.socialIcons.toggleClass("site-header__b-accent--is-visible"); */
          this.menuIcon.toggleClass("site-header__menu-icon--close-x");
+         this.siteHeader.toggleClass("site-header__menu-icon__container--is-visible");
 
          if (this.window.height() < 650) {
             this.socialIcons.css("top", "80%");
@@ -150,6 +154,11 @@ var MobileMenu = function () {
          /* this.menuContent.toggleClass("site-header__menu-content--is-visible");
           this.siteHeader.toggleClass("site-header--is-expanded");
           this.menuIcon.toggleClass("site-header__menu-icon--close-x");*/
+      }
+   }, {
+      key: "toggleTheIcon",
+      value: function toggleTheIcon() {
+         this.socialIcons.toggleClass();
       }
    }]);
 
