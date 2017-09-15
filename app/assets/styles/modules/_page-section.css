@@ -4,7 +4,33 @@
 	    @mixin atMedium {
 	        padding: 6.375rem 0 4rem 0;
 	    }
+	
 
+	&__bg {
+		position: absolute;
+	
+		display: none;
+		z-index: 0;
+
+		img {
+			width: 90%;
+		}
+
+		@mixin atMedium {
+			top: 50%;
+			left: 50%;		
+			transform: translate(-90%, -10%);
+			display: block;
+		}
+
+		@mixin atLarge {
+			top: 50%;
+			left: 50%;		
+			transform: translate(-80%, -20%);
+			display: block;
+		}
+
+	}
 
 	&__last {
 		

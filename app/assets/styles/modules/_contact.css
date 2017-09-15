@@ -1,0 +1,114 @@
+.contact {
+
+	position: relative;
+	margin-left: 10px;
+	margin-right: 10px;
+
+
+	@mixin atSmall {
+		margin-left: 50px;
+		margin-right: 50px;
+	}
+
+	@mixin atMedium {
+		margin-left: 20%;
+	margin-right: 20%;
+
+
+	}
+
+
+	&__text-content {
+		font-size: 1.125rem;
+
+		&--center {
+			text-align: center;
+		}
+
+		
+
+	}
+
+	
+
+	input[type="text"] {
+		margin: 0 auto;
+		background-color: rgba($blushPink,.37);
+		display: flex;
+		flex-wrap: wrap;
+		width: 100%;		
+		margin-bottom: 8px;
+
+
+
+	}
+
+	input[type="submit"] {
+		margin: 0 auto;
+		margin-top: 50px;
+		margin-bottom: 20px;
+		display: block;	
+		color: $darkRose;
+		width: 130px;
+		font-size: 0.8125rem;
+		border: solid 1px $darkRose;
+		background-color: transparent;
+		text-align: center;
+		font-weight: 700;
+		letter-spacing: .072em;
+
+
+
+		@mixin atMedium {
+			width: 155px;
+			font-size: 1rem;
+
+		}
+	}
+
+	&__textarea {
+		margin: 0 auto;
+		background-color: rgba($blushPink,.37);
+		display: flex;
+		width: 100%;
+		
+		height: 250px;
+		margin-bottom: 8px;
+		
+		padding: 15px 15px;
+    border: none;   
+    font-size: 1rem;
+
+		 &::placeholder {
+            color: $darkgray;
+             font-size: 0.8125rem;
+            letter-spacing: .128em;
+            font-weight: 300;
+            font-family: lato;
+            font-style: italic;
+
+
+             @mixin atSmall {
+                font-size: 0.9375rem;
+            }
+
+            @mixin atMedium {
+                font-size: 1.125rem;
+
+            }
+
+        }
+
+	}
+
+	
+	&__submit {
+		
+	}
+
+
+
+
+
+
+}

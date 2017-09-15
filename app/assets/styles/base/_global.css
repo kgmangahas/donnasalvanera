@@ -75,8 +75,38 @@ button[type="submit"] {
     }
 }
 
-input[type="text"] {
+input[type="text"]{
     padding: 15px 15px;
     border: none;   
-    font-size: 1rem;
+    
+    color: $black;
+    font-size: 1.125rem;   
+    font-weight: 300;
+    font-family: lato;
+
+
+    
+
+    &::placeholder {
+            color: $darkgray;
+            font-size: 0.8125rem;
+            letter-spacing: .128em;
+            font-weight: 300;
+            font-family: lato;
+            font-style: italic;
+            position: relative;
+            white-space: pre-line;
+           
+
+
+            @mixin atSmall {
+                font-size: 0.9375rem;
+            }
+
+            @mixin atMedium {
+                font-size: 1.125rem;
+
+            }
+
+        }
 }
