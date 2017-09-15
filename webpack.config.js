@@ -10,8 +10,9 @@ module.exports = {
     output: {
         //change from path: "./app/temp/scripts" because of not an absolute path error
         /*path:  __dirname + '/app/temp/scripts',
-        filename: "[name].js"*/       
-        path:  __dirname + '/app/temp/scripts',
+        filename: "[name].js"*/
+        //path: path.resolve(__dirname, "./app/temp/scripts"),
+        path: path.resolve(__dirname, "./app/temp/scripts"),
         filename: "[name].js"
     },
 
