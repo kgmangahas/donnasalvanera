@@ -1,9 +1,10 @@
-@import "normalize.css";
 @import "base/_wordpress";
-@import "base/_mailchimp";
+@import "normalize.css";
 @import "base/_variable";
 @import "base/_mixins";
 @import "base/_global";
+@import "base/_mailchimp";
+@import "base/_basic-changes";
 @import "modules/_site-header";
 @import "modules/_primary-nav";
 @import "modules/_hero";

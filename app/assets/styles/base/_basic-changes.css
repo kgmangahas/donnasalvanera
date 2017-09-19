@@ -1,0 +1,24 @@
+/* if logged in wordpress move header down */
+ 
+ 
+.logged-in .site-header {
+    top: 45px;
+}
+ 
+@media (min-width:530px) {
+.logged-in .site-header {
+    top: 45px;
+}
+}
+ 
+@media (min-width:800px) {
+.logged-in .site-header {
+    top: 0px;
+}
+} 
+ 
+ 
+.logged-in #wpadminbar {
+    position: fixed;
+}
+ 

@@ -79,7 +79,7 @@ button[type="submit"] {
     }
 }
 
-input[type="text"]{
+input[type="text"], input[type="email"], input[type="url"] {
     padding: 15px 15px;
     border: none;   
     
