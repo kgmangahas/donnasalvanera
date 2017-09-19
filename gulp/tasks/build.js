@@ -11,7 +11,7 @@ gulp.task('previewDist', function() {
     browserSync.init({
         notify: false,
         server: {
-            baseDir: "dist"
+            baseDir: "dist-wp"
         }    
         
     });
@@ -21,7 +21,7 @@ gulp.task('previewDist', function() {
 
 
 gulp.task('deleteDistFolder',  function () {
-   return del("./dist");
+   return del("./dist-wp");
 });
 
 
@@ -36,7 +36,7 @@ gulp.task('copyGeneralFiles',['deleteDistFolder'], function() {
         '!./app/temp/**'
     ];
     return gulp.src(pathsToCopy)
-        .pipe(gulp.dest("./dist"));
+        .pipe(gulp.dest("./dist-wp"));
 })
 
 
@@ -53,7 +53,7 @@ gulp.task('usemin', ['styles', 'scripts'], function() {
             css: [rev()],
             js: [rev()]
         }))
-        .pipe(gulp.dest("./dist"));
+        .pipe(gulp.dest("./dist-wp"));
 });
 
 
@@ -64,7 +64,7 @@ gulp.task('optimizeImages', ['deleteDistFolder'], function() {
        interlaced: true,
        multipass: true
    }))
-    .pipe(gulp.dest("./dist/assets/images"));
+    .pipe(gulp.dest("./dist-wp/assets/images"));
 });
 
 

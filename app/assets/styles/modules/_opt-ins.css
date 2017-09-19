@@ -14,8 +14,12 @@
 
 	@mixin atSmall {
 		padding: 15px 20px;
-		background: linear-gradient(rgba($rose,.7),rgba($rose,.7)), url('../../assets/images/sign-up-bg.png');
+		/* background: linear-gradient(rgba($rose,.7),rgba($rose,.7)), url('../../assets/images/sign-up-bg.png'); */
 		
+
+		/* for wordpress */
+		background: linear-gradient(rgba($rose,.7),rgba($rose,.7)), url('/www.dsdigitalstudio.com/wp/wp-content/themes/dsdigitalstudio/assets/images/sign-up-bg.png');
+
 	position: relative;
 	margin-left: auto;
 	margin-right: auto;

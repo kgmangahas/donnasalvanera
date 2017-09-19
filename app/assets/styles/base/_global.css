@@ -36,6 +36,10 @@ a {
 
 }
 
+a: visited {
+    color: $$darkRose;
+}
+
 h2 {
 	font-size: 2.1875rem;
 	line-height: .97em;
