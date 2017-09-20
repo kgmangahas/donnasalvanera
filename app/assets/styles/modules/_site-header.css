@@ -5,7 +5,7 @@
 	position: fixed;	
 	background-color: $white;
 	height: 50px;
-	z-index: 50;
+	z-index: 20;
 	transition-timing-function: ease-in-out;
 	transition: all .3s; 
 	
@@ -46,6 +46,7 @@
 
 	 &--is-expanded {
 	 	position:fixed;
+		z-index: 50;
 	 	background-color: $blushPink;
 		height: 100vh;
 		
@@ -152,21 +153,31 @@
 		
 		
 		vertical-align: center;
-		opacity: 0;
+		opacity: 1;
 		transition: opacity .3s ease-in-out;
+		position: relative;
+		z-index: -10;
+		display:none;
 
 		&--is-visible {
 			opacity: 1;
+			display: block;
+			z-index: 12;
 		}
 
 		@mixin atSmall {
 			margin-top: 0px;
+			position: relative;
+		z-index: -10;
+			
 		}
 	
 		@mixin atMedium {
 			display: block;			
 			margin-top: 0;
 			opacity: 1;
+			position: relative;
+		z-index: -10;
 		}
 			
 	

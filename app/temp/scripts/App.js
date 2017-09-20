@@ -128,7 +128,7 @@ var MobileMenu = function () {
       value: function events() {
 
          this.menuIcon.click(this.toggleTheMenu.bind(this));
-         this.socialIcons.click(this.toggleTheIcon.bind(this));
+         this.socialIcons.hover(this.toggleTheIcon.bind(this));
       }
    }, {
       key: "toggleTheMenu",
@@ -144,15 +144,15 @@ var MobileMenu = function () {
          this.menuIcon.toggleClass("site-header__menu-icon--close-x");
          this.siteHeader.toggleClass("site-header__menu-icon__container--is-visible");
 
-         if (this.window.height() < 650) {
-            this.socialIcons.css("top", "80%");
+         /*if (this.window.height() < 650) {
+            this.socialIcons.css("top","80%");
             this.nav.css("margin-top", "30px");
          }
-
-         if (this.window.height() > 1000) {
-            console.log("this is over 1000");
-            this.socialIcons.css("top", "60%");
-         }
+             if ( this.window.height() > 1000 ) {
+          console.log("this is over 1000");
+            this.socialIcons.css("top","60%");
+           
+         }*/
          /* this.menuContent.toggleClass("site-header__menu-content--is-visible");
           this.siteHeader.toggleClass("site-header--is-expanded");
           this.menuIcon.toggleClass("site-header__menu-icon--close-x");*/

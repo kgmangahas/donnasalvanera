@@ -34,7 +34,7 @@ class MobileMenu {
       
 
         this.menuIcon.click(this.toggleTheMenu.bind(this));
-        this.socialIcons.click(this.toggleTheIcon.bind(this));
+        this.socialIcons.hover(this.toggleTheIcon.bind(this));
        
     }
     
@@ -51,7 +51,7 @@ class MobileMenu {
         this.siteHeader.toggleClass("site-header__menu-icon__container--is-visible");
        
 
-       if (this.window.height() < 650) {
+       /*if (this.window.height() < 650) {
           this.socialIcons.css("top","80%");
           this.nav.css("margin-top", "30px");
        }
@@ -61,7 +61,7 @@ class MobileMenu {
         console.log("this is over 1000");
           this.socialIcons.css("top","60%");
          
-       }
+       }*/
        /* this.menuContent.toggleClass("site-header__menu-content--is-visible");
         this.siteHeader.toggleClass("site-header--is-expanded");
         this.menuIcon.toggleClass("site-header__menu-icon--close-x");*/

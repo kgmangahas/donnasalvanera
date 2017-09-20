@@ -1,5 +1,6 @@
 .page-section {
 	position: relative;
+	z-index: 11;
 	padding: 1.2rem 0;       
 	    @mixin atMedium {
 	        padding: 6.375rem 0 4rem 0;
