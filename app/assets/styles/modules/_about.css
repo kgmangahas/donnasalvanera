@@ -4,20 +4,26 @@
 
 	&__hello {
 
-
-		&--center {
-			text-align: center;
-		}
+		display: block;
+		width: 100%;
 		
-
-
-		img {
-			width: 40%;
+		
 
 			@mixin atMedium {
 				width: 50%;
 			}
+
+		&--center {
+			margin-left: auto;
+			margin-right: auto;
+			
 		}
+		
+
+
+		
+			
+		
 	}
 
 

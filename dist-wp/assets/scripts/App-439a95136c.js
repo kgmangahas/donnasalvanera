@@ -108,12 +108,13 @@ var MobileMenu = function () {
       this.menuIcon = (0, _jquery2.default)(".site-header__menu-icon");
       this.menuContent = (0, _jquery2.default)(".site-header__menu-content");
       this.name = (0, _jquery2.default)(".site-header__name");
-      this.socialIcons = (0, _jquery2.default)(".social-icons");
+      this.socialIcons = (0, _jquery2.default)(".social-icons__icon");
       this.body = (0, _jquery2.default)("body");
       this.nav = (0, _jquery2.default)(".primary-nav");
+      this.navigationText = (0, _jquery2.default)(".primary-nav a");
       this.window = (0, _jquery2.default)(window);
       this.isMobileMenu = false;
-      this.socialIconsMain = (0, _jquery2.default)(".social-icons__icon.icon");
+      this.socialIconsMain = (0, _jquery2.default)(".social-icons__icon .icon");
 
       this.events();
 
@@ -137,20 +138,21 @@ var MobileMenu = function () {
          this.logo.toggleClass("site-header__logo--is-not-visible");
          this.body.toggleClass("body--no-scroll");
          this.menuIcon.toggleClass("site-header__menu-icon--is-clicked");
+         // this.navigationText.toggleClass("primary-nav a--is-visible");
          /* this.name.toggleClass("site-header__name--is-visible");
           this.socialIcons.toggleClass("site-header__b-accent--is-visible"); */
          this.menuIcon.toggleClass("site-header__menu-icon--close-x");
          this.siteHeader.toggleClass("site-header__menu-icon__container--is-visible");
 
-         if (this.window.height() < 650) {
-            this.socialIcons.css("top", "80%");
+         /*if (this.window.height() < 650) {
+            this.socialIcons.css("top","80%");
             this.nav.css("margin-top", "30px");
          }
-
-         if (this.window.height() > 1000) {
-            console.log("this is over 1000");
-            this.socialIcons.css("top", "60%");
-         }
+             if ( this.window.height() > 1000 ) {
+          console.log("this is over 1000");
+            this.socialIcons.css("top","60%");
+           
+         }*/
          /* this.menuContent.toggleClass("site-header__menu-content--is-visible");
           this.siteHeader.toggleClass("site-header--is-expanded");
           this.menuIcon.toggleClass("site-header__menu-icon--close-x");*/
@@ -158,7 +160,8 @@ var MobileMenu = function () {
    }, {
       key: "toggleTheIcon",
       value: function toggleTheIcon() {
-         this.socialIcons.toggleClass();
+         console.log("toggletheicon");
+         this.socialIcons.toggleClass("social-icons__icon.icons.social-icons__icon--is-not-hover");
       }
    }]);
 
