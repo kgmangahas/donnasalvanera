@@ -36,7 +36,7 @@
     	}
     }
     
-  	&__sm-2 {
+  	&__sm-6 {
 		width: 50%;
 		float: left;
 	}
@@ -45,7 +45,7 @@
 	@mixin atSmall {
 
 		&__sm-2 {
-		width: 50%;
+		width: 16.67%;
 		float: left;
 		}
 
@@ -90,7 +90,7 @@
 	 
 
     @mixin atMedium {
-
+	
 
 
 

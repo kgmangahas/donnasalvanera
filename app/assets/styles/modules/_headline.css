@@ -22,6 +22,11 @@
 		color: $darkRose;
 	}
 
+
+	&--left-margin {
+		margin-left: 10px;
+	}
+
 	&--no-t-margin {
 		margin-top: 20px;
 
@@ -35,6 +40,29 @@
 
 		}
 	}
+
+
+	&--small {
+		font-size: 1rem;
+		line-height: 1.4em;
+
+		@mixin atMedium {
+			font-size: 1.25rem;
+			line-height: 1.6em;
+		}
+
+
+	}
+
+	&--thin {
+		font-weight: 300;
+	}
+
+	&--regular {
+		font-weight: 400;
+	}
+
+
 
 	&__bg {
 		position: relative;
