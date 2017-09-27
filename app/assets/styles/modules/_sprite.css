@@ -2,85 +2,71 @@
 Instead edit gulp/template/sprite */
     
         .icon {
-             background-image: url('../../assets/images/sprites/sprite-4847a507.svg');  
+             background-image: url('../../assets/images/sprites/sprite-57df7145.svg');  
         }
 
         .no-svg .icon {
-            background-image: url('../../assets/images/sprites/sprite-4847a507.png');
+            background-image: url('../../assets/images/sprites/sprite-57df7145.png');
         }
 
     .icon--branding {
         width: 65px;
         height: 65px;
-        background-position: 49.743589743589745% 0;
+        background-position: 45.539906103286384% 81.84729064039409%;
     }
     
 
     .icon--ds {
         width: 97px;
         height: 207px;
-        background-position: 0 0;
+        background-position: 0 98.60655737704919%;
     }
     
 
     .icon--fb {
         width: 49px;
         height: 49px;
-        background-position: 76.77725118483413% 31.0126582278481%;
+        background-position: 99.70305676855895% 0;
     }
     
 
-    .icon--fb- {
-        width: 49px;
-        height: 49px;
-        background-position: 45.97156398104266% 82.27848101265823%;
+    .icon--hello {
+        width: 228.32px;
+        height: 60.15px;
+        background-position: 0 0;
     }
     
 
     .icon--instagram {
         width: 49px;
         height: 49px;
-        background-position: 76.77725118483413% 0;
+        background-position: 99.70305676855895% 22.374429223744293%;
     }
     
 
-    .icon--instagram- {
-        width: 49px;
-        height: 49px;
-        background-position: 100% 62.0253164556962%;
+    .icon--triangles {
+        width: 84px;
+        height: 106px;
+        background-position: 50% 37.129629629629626%;
     }
     
 
     .icon--tumbler {
         width: 49px;
         height: 49px;
-        background-position: 76.77725118483413% 62.0253164556962%;
-    }
-    
-
-    .icon--tumbler- {
-        width: 49px;
-        height: 49px;
-        background-position: 76.77725118483413% 93.0379746835443%;
+        background-position: 99.70305676855895% 44.74885844748859%;
     }
     
 
     .icon--twitter {
         width: 49px;
         height: 49px;
-        background-position: 100% 0;
-    }
-    
-
-    .icon--twitter- {
-        width: 49px;
-        height: 49px;
-        background-position: 100% 31.0126582278481%;
+        background-position: 99.70305676855895% 67.12328767123287%;
     }
     
 
     .icon--webdesign {
         width: 65px;
         height: 65px;
-        background-position: 49.743589743589745% 45.774647887323944%;
+        background-position: 76.05633802816901% 81.84729064039409%;
     }

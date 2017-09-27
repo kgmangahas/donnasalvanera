@@ -1,6 +1,31 @@
 .row {
 	@mixin clearFix;
 	
+	
+
+
+	&--flex {
+
+		display: flex;
+		flex-direction: column;
+
+		&--text {
+		 flex-direction: column-reverse;
+        justify-content: flex-end;
+		}
+
+		@mixin atMedium {
+			display: flex;
+    		flex-direction: row;
+		}
+
+	}
+	
+	
+	
+
+
+	
 	&--gutters {
         margin-right: -61px;
     }
@@ -83,6 +108,9 @@
 			margin-left: 8.33%;
 			
 		}
+
+
+
 		
 
 
@@ -90,6 +118,9 @@
 	 
 
     @mixin atMedium {
+
+    
+	
 	
 
 
@@ -115,6 +146,11 @@
 	}
 
 
+	&__medium-12 {
+		width: 100%;
+	}
+
+
 
 
 	&__offset-3 {
@@ -134,6 +170,17 @@
 
 	&__top-padding {
 		margin-top: 50px;
+
+
+	}
+
+
+	&__top-padding--small {
+		margin-top: 30px;
+
+		@mixin atMedium {
+			margin-top: 0;
+		}
 
 
 	}

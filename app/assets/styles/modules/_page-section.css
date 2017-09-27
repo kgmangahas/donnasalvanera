@@ -7,6 +7,16 @@
 	    }
 	
 
+	&__full {
+
+		margin-left: -25px;
+		margin-right: -25px;
+		@mixin atMedium {
+			margin: 0;
+		}
+		
+	}	
+
 	&__bg {
 		position: absolute;
 	
@@ -76,5 +86,37 @@
 		}
 		
 	}
+
+	&--t-margin {
+		margin-top: 30px;
+
+		 @mixin atMedium {
+		 	margin-top: 60px;
+		 }
+	}
+
+	&--t-b-margin {
+		margin-top: 40px;
+		margin-bottom: 30px;
+
+
+		 @mixin atMedium {
+		 	margin-top: 70px;
+		 	margin-bottom: 60px;
+		 }
+	}
+
+	&--pull-top-till-medium {
+		
+		margin-top: -80px;
+		@mixn atMedium {
+			margin-top: -150px;
+		}
+		
+
+
+	}
+
+
 		
 }

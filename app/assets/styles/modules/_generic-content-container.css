@@ -9,6 +9,15 @@
     }
     
 
+    &--l-r-margin {
+
+        margin: 0 40px;
+
+        @mixin atMedium {
+            margin: 0;
+        }
+    }
+
 
 
    
@@ -48,7 +57,7 @@
         }
 
         @mixin atMedium {
-            font-size: 1.375rem;
+            font-size: 1.25rem;
         }
         
     }

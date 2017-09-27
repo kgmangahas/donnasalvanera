@@ -6,6 +6,15 @@
 	width: 100%;
 	max-width: 1200px;
 
+	&--pull-top {
+		margin-top: -50px;
+
+		&mixin atMedium {
+			margin-top: -330px;
+			
+		}
+	}
+
 	&--none {
 		
 
