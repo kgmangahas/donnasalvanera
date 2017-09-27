@@ -29,6 +29,12 @@
 
 		display: block;
         margin: 0 auto;
+        position: relative;
+        z-index: 15;
+
+        &--pull-top {
+        	margin-top: -40px;
+        }
        
 		
 	}

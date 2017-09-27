@@ -2,13 +2,9 @@
 	
 	position: relative;
 	font-weight: 300;
+	text-align: center;
 	
-
-	margin-left: auto;
-	margin-right: auto;
-	width: auto;
-	
-	z-index: 22;
+	z-index: 14;
 	
 	vertical-align: center;
 	
@@ -19,7 +15,7 @@
 	}
 	
 	@mixin atMedium {
-		width: 700px;
+		width: 100%;
 	}
 
 	
@@ -48,12 +44,14 @@
 		position: absolute;
 		left:0;
 		top: 0px;		
-
+	
 		
 		
 		@mixin atMedium {
 			margin: 0;
 			padding: 0;
+			position: relative;
+			display: inline-block;
 			@mixin clearFix;
 			top:auto;
 		}

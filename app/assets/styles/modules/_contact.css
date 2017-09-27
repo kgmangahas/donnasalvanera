@@ -4,6 +4,7 @@
 	margin-left: 10px;
 	margin-right: 10px;
 
+	
 
 	@mixin atSmall {
 		margin-left: 50px;
@@ -12,11 +13,22 @@
 
 	@mixin atMedium {
 		margin-left: 20%;
-	margin-right: 20%;
+		margin-right: 20%;
 
 
 	}
 
+
+	&--side {
+		position: relative;
+		margin-left: 10px;
+		margin-right: 10px;
+
+		
+
+
+	
+	}
 
 	&__text-content {
 		font-size: 1.125rem;
@@ -31,7 +43,10 @@
 
 	
 
-	input[type="text"], input[type="email"], input[type="url"] {
+
+	
+	input[type="text"] {
+
 		margin: 0 auto;
 		background-color: rgba($blushPink,.37);
 		display: flex;
@@ -80,6 +95,11 @@
 		padding: 15px 15px;
     border: none;   
     font-size: 1rem;
+
+
+    	&--small {
+    		height: 195px;
+    	}
 
 		 &::placeholder {
             color: $darkgray;
