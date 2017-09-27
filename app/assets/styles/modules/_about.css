@@ -10,6 +10,7 @@
 		
 
 			@mixin atMedium {
+				display: block;
 				width: 50%;
 			}
 
